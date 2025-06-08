@@ -1,0 +1,9 @@
+<person>
+    <id>1</id>
+    <name>Eduard</name>
+    <age>20</age>
+    <address>
+        <country>Russia</country>
+        <city>Cheboksary</city>
+    </address>
+</person>
