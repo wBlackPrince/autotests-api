@@ -4,8 +4,8 @@ from websockets import ServerConnection
 
 async def echo(webSocket: ServerConnection):
     async for message in webSocket:
-        print(f'Получено сообщение: {message}')
-        response = f'Сервер получил сообщение {message}'
+        print(f"Получено сообщение от пользователя: {message}")
+        response = f"Сообщение пользователя: {message}"
 
         for i in range(5):
             await webSocket.send(response)
@@ -16,6 +16,3 @@ async def main():
     await server.wait_closed()
 
 asyncio.run(main())
-
-
-
