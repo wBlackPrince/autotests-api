@@ -2,13 +2,18 @@ import websockets
 import asyncio
 from websockets import ServerConnection
 
+clients = set()
+
 async def echo(webSocket: ServerConnection):
+    clients.add(webSocket)
+
     async for message in webSocket:
         print(f"Получено сообщение от пользователя: {message}")
-        response = f"Сообщение пользователя: {message}"
+        response = f"#: {message}"
 
-        for i in range(5):
-            await webSocket.send(response)
+        for client in clients:
+            if client != webSocket:
+                await client.send(response)
 
 async def main():
     server = await websockets.serve(echo, "localhost", 8765)
