@@ -13,9 +13,9 @@ def receive_response(client_socket):
 
 
 
-#send_mymessage("Привет", client_socket)
+send_mymessage("Привет", client_socket)
 # Для второго клиента
-send_mymessage("Как дела ?", client_socket)
+# send_mymessage("Как дела ?", client_socket)
 receive_response(client_socket)
 
 client_socket.close()
