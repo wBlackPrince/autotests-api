@@ -8,7 +8,7 @@ class GetCoursesRequestDict(TypedDict):
     """
     Описание структуры запроса на получение списка курсов.
     """
-    course_id: str
+    user_id: str
 
 class UpdateCourseRequestDict(TypedDict):
     '''
@@ -46,8 +46,10 @@ class CoursesClient(APIClient):
         :param query: Словарь с userId.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.client.get(f"/api/v1/courses",
-                               params = query)
+        return self.client.get(
+            "/api/v1/courses",
+                params = query
+        )
 
     def get_course_api(self, course_id: str) -> Response:
         """
@@ -77,8 +79,10 @@ class CoursesClient(APIClient):
         :param request: Словарь с title, maxScore, minScore, description, estimatedTime.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.client.post(f"/api/v1/courses",
-                                json=request)
+        return self.client.post(
+            "/api/v1/courses",
+                json=request
+        )
 
     def delete_course_api(self, course_id: str) -> Response:
         """
