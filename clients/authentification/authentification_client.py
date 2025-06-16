@@ -19,6 +19,11 @@ class RefreshDict(TypedDict):
     refreshToken: str
 
 class AuthentificationClient(APIClient):
+    """
+    Клиент для работы с /api/v1/authentication
+    """
+
+
     def login_api(self, request: LoginDict) -> Response:
         """
         Метод выполняет аутентификацию пользователя.
@@ -26,7 +31,7 @@ class AuthentificationClient(APIClient):
         :param request: Словарь с email и password.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.client.post("http://127.0.0.1:8000/api/v1/authentication/login", json = request)
+        return self.client.post("/api/v1/authentication/login", json = request)
 
     def refresh_api(self, request: RefreshDict) -> Response:
         """
@@ -35,5 +40,5 @@ class AuthentificationClient(APIClient):
         :param request: Словарь с refreshToken.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.client.post("http://127.0.0.1:8000/api/v1/authentication/refresh", json = request)
+        return self.client.post("/api/v1/authentication/refresh", json = request)
 

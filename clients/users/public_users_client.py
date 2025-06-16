@@ -2,7 +2,7 @@ from clients.api_client import APIClient
 from typing import Any, TypedDict
 from httpx import Response
 
-class CreateDict:
+class CreateUserRequestDict(TypedDict):
     email: str
     password: str
     lastName: str
@@ -11,11 +11,15 @@ class CreateDict:
 
 
 class PublicUsersClient(APIClient):
-    def create_user_api(self, request: CreateDict) -> Response:
+    """
+    Клиент для работы с /api/v1/users
+    """
+
+    def create_user_api(self, request: CreateUserRequestDict) -> Response:
         '''
         Метод создания нового пользователя
 
         :param request: Словарь с email, паролем, фамилией, именем и вторым именем
         :return: Ответ от сервера в виде объекта httpx.Response
         '''
-        return self.client.post("http://127.0.0.1:8000/api/v1/users", json = request)
+        return self.client.post("/api/v1/users", json = request)
