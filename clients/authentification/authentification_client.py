@@ -1,17 +1,8 @@
-from api_client import APIClient
-from httpx import Client, URL, QueryParams, Response, Request
-from typing import Any, TypedDict
-from httpx._types import RequestData, RequestFiles
 
-# get_user_headers = {
-#     "Authorization": f"Bearer {login_response_data["token"]["accessToken"]}"
-# }
-# get_user_response = httpx.get(f"http://127.0.0.1:8000/api/v1/users/{create_response_data["user"]["id"]}",
-#                               headers = get_user_headers)
-# get_user_response_data = get_user_response.json()
-#
-# print(f"Успешность получения пользователя: {get_user_response.status_code}")
-# print(f"Данные запроса на получение пользователя: {get_user_response_data}")
+from httpx import Response
+from typing import TypedDict
+
+from clients.api_client import APIClient
 
 
 class LoginDict(TypedDict):
