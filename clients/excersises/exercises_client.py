@@ -47,7 +47,7 @@ class ExercisesClient(APIClient):
         :return: Ответ от сервера в виде объекта httpx.Response
         '''
         return self.client.get(
-            f"api/v1/exercises",
+            "api/v1/exercises",
                 params = query
         )
 
@@ -69,7 +69,7 @@ class ExercisesClient(APIClient):
         :return: Ответ от сервера в виде объекта httpx.Response
         '''
         return self.client.post(
-            f"api/v1/exercises",
+            "api/v1/exercises",
                 json = request
         )
 
