@@ -31,7 +31,7 @@ class GetExercisesRequestDict(TypedDict):
     '''
     Описание структуры запроса для получения списка уроков у курса
     '''
-    course_id: str
+    courseId: str
 
 class Exercise(TypedDict):
     '''
@@ -47,20 +47,20 @@ class Exercise(TypedDict):
     estimatedTime: str | None
 
 
-class GetExercisesResponseDict:
+class GetExercisesResponseDict(TypedDict):
     '''
     Описание структуры запроса на получение списка уроков
     '''
     exercises: list[Exercise]
 
 
-class CreateExerciseResponseDict:
+class CreateExerciseResponseDict(TypedDict):
     '''
     Описание структуры запроса на создание урока
     '''
     exercise: Exercise
 
-class UpdateExerciseResponseDict:
+class UpdateExerciseResponseDict(TypedDict):
     '''
     Описание структуры запроса на обновление урока
     '''
@@ -82,7 +82,7 @@ class ExercisesClient(APIClient):
         '''
         return self.get(
             "api/v1/exercises",
-                params = query
+                params=query
         )
 
     def get_exercises(self, query: GetExercisesRequestDict) -> GetExercisesResponseDict:
@@ -92,7 +92,8 @@ class ExercisesClient(APIClient):
         :param query: Словарь с course_id
         :return: Словарь со списком exercises
         '''
-        return self.get_exercises_api(query= query).json()
+        response = self.get_exercises_api(query= query)
+        return response.json()
 
     def get_exercise_api(self, exercise_id: str) -> Response:
         '''
@@ -111,7 +112,8 @@ class ExercisesClient(APIClient):
         :param exercise_id: Идентификатор урока
         :return: Словарь с данными об уроке
         '''
-        return self.get_exercise_api(exercise_id = exercise_id).json()
+        response = self.get_exercise_api(exercise_id = exercise_id)
+        return response.json()
 
     def create_exercise_api(self, request: CreateExerciseRequestDict) -> Response:
         '''
@@ -132,7 +134,8 @@ class ExercisesClient(APIClient):
         :param request:
         :return: Словарь с данными об уроке
         '''
-        return self.create_exercise_api(request = request).json()
+        response = self.create_exercise_api(request = request)
+        return response.json()
 
     def update_exercise_api(self, exercise_id: str, request: UpdateExerciseRequestDict) -> Response:
         '''
@@ -155,10 +158,11 @@ class ExercisesClient(APIClient):
         :param request: словарь с новыми данными об уроке
         :return: Словарь с данными об уроке
         '''
-        return self.update_exercise_api(
+        response = self.update_exercise_api(
             exercise_id = exercise_id,
             request = request
-        ).json()
+        )
+        return response.json()
 
     def delete_exercise_api(self, exercise_id: str) -> Response:
         '''
