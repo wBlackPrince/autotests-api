@@ -1,7 +1,7 @@
 from typing import TypedDict
 from clients.api_client import APIClient
 from httpx import Response
-
+from clients.private_httpx_builder import AuthentificationUserDict, get_private_httpx_client
 
 
 class UpdateExerciseRequestDict(TypedDict):
@@ -46,7 +46,7 @@ class ExercisesClient(APIClient):
         :param query: Словарь с course_id
         :return: Ответ от сервера в виде объекта httpx.Response
         '''
-        return self.client.get(
+        return self.get(
             "api/v1/exercises",
                 params = query
         )
@@ -58,7 +58,7 @@ class ExercisesClient(APIClient):
         :param exercise_id: Идентификатор урока
         :return: Ответ от сервера в виде объекта httpx.Response
         '''
-        return self.client.get(f"api/v1/exercises/{exercise_id}")
+        return self.get(f"api/v1/exercises/{exercise_id}")
 
 
     def create_exercise_api(self, request: CreateExerciseRequestDict) -> Response:
@@ -68,7 +68,7 @@ class ExercisesClient(APIClient):
         :param request: Словарь с title, courseId, maxScore, minScore, orderIndex, description, estimatedTime
         :return: Ответ от сервера в виде объекта httpx.Response
         '''
-        return self.client.post(
+        return self.post(
             "api/v1/exercises",
                 json = request
         )
@@ -82,7 +82,7 @@ class ExercisesClient(APIClient):
         :param request: Словарь с title, maxScore, minScore, orderIndex, description, estimatedTime
         :return: Ответ от сервера в виде объекта httpx.Response
         '''
-        return self.client.patch(
+        return self.patch(
             f"api/v1/exercises/{exercise_id}",
                 json = request
         )
@@ -95,4 +95,13 @@ class ExercisesClient(APIClient):
         :param exercise_id: Идентификатор урока
         :return: Ответ от сервера в виде объекта httpx.Response
         '''
-        return self.client.delete(f"api/v1/exercises/{exercise_id}")
+        return self.delete(f"api/v1/exercises/{exercise_id}")
+
+
+def get_exercises_client(user: AuthentificationUserDict) -> ExercisesClient:
+    '''
+    Метод возвращающий объект ExercisesClient
+    :param user: Словарь с email, password
+    :return: объект класса ExercisesClient
+    '''
+    return ExercisesClient(client = get_private_httpx_client(user))

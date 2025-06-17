@@ -2,7 +2,6 @@ from httpx import Client, URL, QueryParams, Response
 from typing import Any
 from httpx._types import RequestData, RequestFiles
 
-
 class APIClient:
     """
     Базовый API клиент, принимающий объект httpx.Client.
@@ -48,7 +47,7 @@ class APIClient:
         :param json: Данные для обновления в формате JSON.
         :return: Объект Response с данными ответа.
         """
-        return self.client.put(url, json = json)
+        return self.client.patch(url, json = json)
 
     def delete(self,
                url: URL | str) -> Response:
