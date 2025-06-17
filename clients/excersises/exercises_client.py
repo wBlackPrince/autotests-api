@@ -92,7 +92,7 @@ class ExercisesClient(APIClient):
         :param query: Словарь с course_id
         :return: Словарь со списком exercises
         '''
-        response = self.get_exercises_api(query= query)
+        response = self.get_exercises_api(query = query)
         return response.json()
 
     def get_exercise_api(self, exercise_id: str) -> Response:
