@@ -46,6 +46,11 @@ class PublicUsersClient(APIClient):
         return self.client.post("/api/v1/users", json = request)
 
     def create_user(self, request: CreateUserRequestDict) -> CreateUserResponseDict:
+        '''
+        Метод для создания нового пользователя, работает поверх низкоуровневого метода для создания пользователя
+        :param request: Словарь с email, паролем, фамилией, именем и вторым именем
+        :return: Словарь с json-данными пользователя
+        '''
         response = self.create_user_api(request)
         return response.json()
 
