@@ -61,7 +61,7 @@ print(f"Данные запроса на создание курса", create_co
 
 create_exercise_request = CreateExerciseRequestDict(
     title = 'Увлекательная география',
-    courseId = '1' * 32,
+    courseId = create_course_response["course"]["id"],
     maxScore = 10,
     minScore = 0,
     orderIndex = 0,

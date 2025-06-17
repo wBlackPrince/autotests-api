@@ -37,13 +37,13 @@ class Exercise(TypedDict):
     '''
     Описание структуры урока
     '''
-    id: str | None
-    title: str | None
-    courseId: str | None
+    id: str
+    title: str
+    courseId: str
     maxScore: int | None
     minScore: int | None
-    orderIndex: int | None
-    description: str | None
+    orderIndex: int
+    description: str
     estimatedTime: str | None
 
 
