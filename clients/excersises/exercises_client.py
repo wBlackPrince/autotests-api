@@ -85,16 +85,6 @@ class ExercisesClient(APIClient):
                 params=query
         )
 
-    def get_exercises(self, query: GetExercisesRequestDict) -> GetExercisesResponseDict:
-        '''
-        Метод получения списка уроков у курса, использует низкоуровневый метод получения списка уроков
-
-        :param query: Словарь с course_id
-        :return: Словарь со списком exercises
-        '''
-        response = self.get_exercises_api(query = query)
-        return response.json()
-
     def get_exercise_api(self, exercise_id: str) -> Response:
         '''
         Метод получения урока у курса
@@ -104,16 +94,6 @@ class ExercisesClient(APIClient):
         '''
         return self.get(f"api/v1/exercises/{exercise_id}")
 
-
-    def get_exercise(self, exercise_id: str) -> Exercise:
-        '''
-        Метод получения данных об уроке, использует низкоуровневый метод получения урока
-
-        :param exercise_id: Идентификатор урока
-        :return: Словарь с данными об уроке
-        '''
-        response = self.get_exercise_api(exercise_id = exercise_id)
-        return response.json()
 
     def create_exercise_api(self, request: CreateExerciseRequestDict) -> Response:
         '''
@@ -126,16 +106,6 @@ class ExercisesClient(APIClient):
             "api/v1/exercises",
                 json = request
         )
-
-    def create_exercise(self, request: CreateExerciseRequestDict) -> CreateExerciseResponseDict:
-        '''
-        Метод создания урока, использует низкоуровневый метод создания урока
-
-        :param request:
-        :return: Словарь с данными об уроке
-        '''
-        response = self.create_exercise_api(request = request)
-        return response.json()
 
     def update_exercise_api(self, exercise_id: str, request: UpdateExerciseRequestDict) -> Response:
         '''
@@ -150,6 +120,48 @@ class ExercisesClient(APIClient):
                 json = request
         )
 
+    def delete_exercise_api(self, exercise_id: str) -> Response:
+        '''
+        Метод удаления урока
+
+        :param exercise_id: Идентификатор урока
+        :return: Ответ от сервера в виде объекта httpx.Response
+        '''
+        return self.delete(f"api/v1/exercises/{exercise_id}")
+
+    def get_exercises(self, query: GetExercisesRequestDict) -> GetExercisesResponseDict:
+        '''
+        Метод получения списка уроков у курса, использует низкоуровневый метод получения списка уроков
+
+        :param query: Словарь с course_id
+        :return: Словарь со списком exercises
+        '''
+        response = self.get_exercises_api(query = query)
+        return response.json()
+
+
+    def get_exercise(self, exercise_id: str) -> Exercise:
+        '''
+        Метод получения данных об уроке, использует низкоуровневый метод получения урока
+
+        :param exercise_id: Идентификатор урока
+        :return: Словарь с данными об уроке
+        '''
+        response = self.get_exercise_api(exercise_id = exercise_id)
+        return response.json()
+
+
+    def create_exercise(self, request: CreateExerciseRequestDict) -> CreateExerciseResponseDict:
+        '''
+        Метод создания урока, использует низкоуровневый метод создания урока
+
+        :param request:
+        :return: Словарь с данными об уроке
+        '''
+        response = self.create_exercise_api(request = request)
+        return response.json()
+
+
     def update_exercise(self, exercise_id: str, request: UpdateExerciseRequestDict) -> UpdateExerciseResponseDict:
         '''
          Метод обновления урока, использует низкоуровневый метод обновления урока
@@ -163,15 +175,6 @@ class ExercisesClient(APIClient):
             request = request
         )
         return response.json()
-
-    def delete_exercise_api(self, exercise_id: str) -> Response:
-        '''
-        Метод удаления урока
-
-        :param exercise_id: Идентификатор урока
-        :return: Ответ от сервера в виде объекта httpx.Response
-        '''
-        return self.delete(f"api/v1/exercises/{exercise_id}")
 
 
 def get_exercises_client(user: AuthentificationUserDict) -> ExercisesClient:
