@@ -1,6 +1,6 @@
 from httpx import Client
 from clients.authentification.authentification_client import get_authentification_client
-from pydantic import BaseModel
+from pydantic import BaseModel, EmailStr
 from clients.authentification.authentification_schema import LoginRequestSchema
 
 
@@ -8,7 +8,7 @@ class AuthentificationUserSchema(BaseModel):
     '''
     Структура запроса на получение приватного httpx клиента
     '''
-    email: str
+    email: EmailStr
     password: str
 
 
