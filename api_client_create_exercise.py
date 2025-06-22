@@ -7,9 +7,7 @@ from clients.private_httpx_builder import AuthentificationUserSchema
 from clients.users.public_users_client import get_public_users_client, CreateUserRequestSchema
 
 public_users_client = get_public_users_client()
-
 create_user_request = CreateUserRequestSchema()
-
 create_user_response = public_users_client.create_user(create_user_request)
 print(f"Данные запроса на создание пользователя: {create_user_response}")
 
@@ -33,13 +31,11 @@ create_course_request = CreateCourseRequestSchema(
     previewFileId=create_file_response.file.id,
     createdByUserId=create_user_response.user.id
 )
-
 create_course_response = courses_client.create_course(request=create_course_request)
 print(f"Данные запроса на создание курса", create_course_response)
 
 create_exercise_request = CreateExerciseRequestSchema(
     courseId=create_course_response.course.id,
-    orderIndex=0
 )
 
 create_exercise_response = exercises_client.create_exercise(create_exercise_request)
