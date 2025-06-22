@@ -1,20 +1,11 @@
-from jsonschema.validators import validate
-
 from clients.private_httpx_builder import AuthentificationUserSchema
 from clients.users.private_users_client import get_private_users_client
 from clients.users.public_users_client import get_public_users_client, CreateUserRequestSchema
-from clients.users.users_schema import CreateUserResponseSchema
-from tools.fakers import get_random_email, get_random_password
+
 
 public_users_client = get_public_users_client()
 
-create_user_request = CreateUserRequestSchema(
-    email=get_random_email(),
-    password=get_random_password(),
-    first_name='Eduard',
-    middle_name='...',
-    last_name='Nikitin'
-)
+create_user_request = CreateUserRequestSchema()
 
 create_user_response = public_users_client.create_user(create_user_request)
 

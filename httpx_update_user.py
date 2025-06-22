@@ -1,10 +1,10 @@
 import httpx
-from tools.fakers import get_random_email, get_random_password
+from tools.fakers import fake
 
 
 payload = {
-  "email": get_random_email(),
-  "password": get_random_password(),
+  "email": fake.email(),
+  "password": fake.password(),
   "lastName": "string",
   "firstName": "string",
   "middleName": "string"
