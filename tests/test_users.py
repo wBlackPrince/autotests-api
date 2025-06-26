@@ -13,9 +13,9 @@ import pytest
 
 @pytest.mark.users
 @pytest.mark.regression
-@pytest.mark.parametrize("email", [fake.email("mail.ru"), fake.email("gmail.com"), fake.email("example.com")])
+@pytest.mark.parametrize("email", ["mail.ru", "gmail.com", "example.com"])
 def test_create_user(email: EmailStr, public_users_client: PublicUsersClient):
-    request = CreateUserRequestSchema(email=email)
+    request = CreateUserRequestSchema(email=fake.email(email))
     response = public_users_client.create_user_api(request)
     response_data = CreateUserResponseSchema.model_validate_json(response.text)
 
