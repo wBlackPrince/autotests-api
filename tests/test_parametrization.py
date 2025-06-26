@@ -52,3 +52,11 @@ users = {
 )
 def test_identifiers(phone_number: str):
     ...
+
+
+@pytest.mark.parametrize(
+    "value",
+    [1, pytest.param(2, marks=pytest.mark.skip(reason="Not supported")), 3]
+)
+def test_example(value):
+    pass
