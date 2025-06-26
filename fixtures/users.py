@@ -1,5 +1,4 @@
 import pytest
-from clients.authentification.authentification_client import get_authentification_client, AuthentificationClient
 from clients.private_httpx_builder import AuthentificationUserSchema
 from clients.users.private_users_client import PrivateUsersClient, get_private_users_client
 from clients.users.public_users_client import PublicUsersClient, get_public_users_client
@@ -25,10 +24,6 @@ class UserFixture(BaseModel):
             email = self.request.email,
             password = self.request.password
         )
-
-@pytest.fixture
-def authentication_client() -> AuthentificationClient:
-    return get_authentification_client()
 
 @pytest.fixture
 def public_users_client() -> PublicUsersClient:
