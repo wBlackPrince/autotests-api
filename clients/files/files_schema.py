@@ -1,5 +1,4 @@
 from pydantic import BaseModel, Field, HttpUrl
-
 from tools.fakers import fake
 
 
@@ -24,4 +23,7 @@ class CreateFileResponseSchema(BaseModel):
     '''
     Описание структуры ответа на создание файла
     '''
+    file: FileSchema
+
+class GetFileResponseSchema(BaseModel):
     file: FileSchema
