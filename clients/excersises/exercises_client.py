@@ -1,10 +1,8 @@
-from typing import TypedDict
 from clients.api_client import APIClient
 from httpx import Response
-
 from clients.excersises.excersises_schema import GetExercisesRequestSchema, CreateExerciseRequestSchema, \
     UpdateExerciseRequestSchema, GetExercisesResponseSchema, GetExerciseResponseSchema, \
-    UpdateExerciseResponseSchema
+    UpdateExerciseResponseSchema, CreateExerciseResponseSchema
 from clients.private_httpx_builder import AuthentificationUserSchema, get_private_httpx_client
 
 
@@ -68,9 +66,9 @@ class ExercisesClient(APIClient):
         response = self.get_exercise_api(exercise_id)
         return GetExerciseResponseSchema.model_validate_json(response.text)
 
-    def create_exercise(self, request: CreateExerciseRequestSchema) -> GetExerciseResponseSchema:
+    def create_exercise(self, request: CreateExerciseRequestSchema) -> CreateExerciseResponseSchema:
         response = self.create_exercise_api(request)
-        return GetExerciseResponseSchema.model_validate_json(response.text)
+        return CreateExerciseResponseSchema.model_validate_json(response.text)
 
     def update_exercise(self, exercise_id: str, request: UpdateExerciseRequestSchema) -> UpdateExerciseResponseSchema:
         response = self.update_exercise_api(exercise_id, request)
