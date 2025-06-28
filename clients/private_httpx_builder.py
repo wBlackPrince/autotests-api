@@ -2,9 +2,9 @@ from httpx import Client
 from clients.authentification.authentification_client import get_authentification_client
 from pydantic import BaseModel, EmailStr
 from clients.authentification.authentification_schema import LoginRequestSchema
+from functools import lru_cache
 
-
-class AuthentificationUserSchema(BaseModel):
+class AuthentificationUserSchema(BaseModel, frozen=True):
     '''
     Структура запроса на получение приватного httpx клиента
     '''
@@ -12,6 +12,7 @@ class AuthentificationUserSchema(BaseModel):
     password: str
 
 
+@lru_cache(maxsize=None)
 def get_private_httpx_client(user: AuthentificationUserSchema) -> Client:
     '''
     Метод-builder для создания клиента, способного работать с приватными эндпоинтами
