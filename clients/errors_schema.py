@@ -30,3 +30,6 @@ class InternalErrorResponseSchema(BaseModel):
     model_config = ConfigDict(populate_by_name=True)
 
     details: str = Field(alias="detail")
+
+
+
