@@ -1,6 +1,8 @@
+from clients.errors_schema import ValidationErrorResponseSchema, ValidationErrorSchema, InternalErrorResponseSchema
 from clients.files.files_schema import CreateFileRequestSchema, CreateFileResponseSchema, FileSchema, \
     GetFileResponseSchema
 from tools.assertions.base import assert_equal
+from tools.assertions.errors import assert_validation_error_response, assert_internal_error_response
 
 
 def assert_create_file_response(request: CreateFileRequestSchema, response: CreateFileResponseSchema):
@@ -39,6 +41,60 @@ def assert_get_file_response(
 
     :param get_file_response: Файл полученный GET-запросов
     :param create_file_response: Файл полученный в результате POST-запроса на создание
-    :return:
+    :raises AssertionError: Если хотя бы одно из полей ответа на создание файла не совпадает с полями ответа на получение файла
     """
     assert_file(get_file_response.file, create_file_response.file)
+
+def assert_create_file_with_empty_filename_response(actual: ValidationErrorResponseSchema):
+    """
+    Проверяет, что ответ на создание файла с пустым именем файла соответствует ожидаемой валидационной ошибке.
+
+    :param actual: Ответ от API с ошибкой валидации, который необходимо проверить.
+    :raises AssertionError: Если фактический ответ не соответствует ожидаемому.
+    """
+    expected = ValidationErrorResponseSchema(
+        details=[
+            ValidationErrorSchema(
+                type="string_too_short",
+                input="",
+                context={"min_length": 1},
+                message="String should have at least 1 character",
+                location=["body", "filename"]
+            )
+        ]
+    )
+
+    assert_validation_error_response(actual, expected)
+
+
+def assert_create_file_with_empty_directory_response(actual: ValidationErrorResponseSchema):
+    """
+    Проверяет, что ответ на создание файла с пустым значением директории соответствует ожидаемой валидационной ошибке.
+
+    :param actual: Ответ от API с ошибкой валидации, который необходимо проверить.
+    :raises AssertionError: Если фактический ответ не соответствует ожидаемому.
+    """
+    expected = ValidationErrorResponseSchema(
+        details=[
+            ValidationErrorSchema(
+                type="string_too_short",
+                input="",
+                context={"min_length": 1},
+                message="String should have at least 1 character",
+                location=["body", "directory"]
+            )
+        ]
+    )
+
+    assert_validation_error_response(actual, expected)
+
+def assert_file_not_found_response(actual: InternalErrorResponseSchema):
+    """
+    Функция для проверки ошибки, если файл не найден на сервере.
+
+    :param actual: Фактический ответ.
+    :raises AssertionError: Если фактический ответ не соответствует ошибке "File not found"
+    """
+    expected = InternalErrorResponseSchema(details="File not found")
+
+    assert_internal_error_response(actual, expected)
