@@ -34,9 +34,10 @@ class TestExercises:
             exercises_client: ExercisesClient,
             function_exercise: ExerciseFixture
     ):
-        ...
-        # response = exercises_client.get_exercise(exercise_id=function_exercise.response.exercise.id)
-        # response_data = GetExerciseResponseSchema.model_validate_json(response.text)
-        #
-        # assert_status_code(response.status_code, HTTPStatus.OK)
-        # assert_get_exercise_response(function_exercise.response, response_data)
+        response = exercises_client.get_exercise_api(exercise_id=function_exercise.response.exercise.id)
+        response_data = GetExerciseResponseSchema.model_validate_json(response.text)
+
+        assert_status_code(response.status_code, HTTPStatus.OK)
+        assert_get_exercise_response(function_exercise.response, response_data)
+
+        validate_json_schema(response.json(), GetExerciseResponseSchema.model_json_schema())
