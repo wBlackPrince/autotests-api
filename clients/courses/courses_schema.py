@@ -19,11 +19,19 @@ class CourseSchema(BaseModel):
     estimated_time: str = Field(alias="estimatedTime")
     created_by_user: UserSchema = Field(alias="createdByUser")
 
-class GetCoursesRequestSchema(BaseModel):
+class GetCoursesQuerySchema(BaseModel):
     """
     Описание структуры запроса на получение списка курсов.
     """
-    user_id: str
+    model_config = ConfigDict(populate_by_name=True)
+
+    user_id: str = Field(alias="userId")
+
+class GetCoursesResponseSchema(BaseModel):
+    """
+    Описание структуры ответа на получения списка курсов
+    """
+    courses: list[CourseSchema]
 
 class CreateCourseRequestSchema(BaseModel):
     '''
@@ -62,5 +70,3 @@ class UpdateCourseResponseSchema(BaseModel):
     Структура ответа на обновление курса
     '''
     course: CourseSchema
-
-print(CreateCourseRequestSchema())

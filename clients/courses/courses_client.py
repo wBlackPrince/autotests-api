@@ -1,8 +1,8 @@
 from typing import TypedDict
 from httpx import Response
 from clients.api_client import APIClient
-from clients.courses.courses_schema import GetCoursesRequestSchema, UpdateCourseRequestSchema, \
-    CreateCourseRequestSchema, CreateCourseResponseSchema
+from clients.courses.courses_schema import UpdateCourseRequestSchema, \
+    CreateCourseRequestSchema, CreateCourseResponseSchema, GetCoursesQuerySchema
 from clients.private_httpx_builder import AuthentificationUserSchema, get_private_httpx_client
 
 
@@ -11,7 +11,7 @@ class CoursesClient(APIClient):
     Клиент для работы с /api/v1/courses
     """
 
-    def get_courses_api(self, query:GetCoursesRequestSchema) -> Response:
+    def get_courses_api(self, query:GetCoursesQuerySchema) -> Response:
         """
         Метод получения списка курсов.
 
@@ -40,7 +40,7 @@ class CoursesClient(APIClient):
         :param request: Словарь с title, maxScore, minScore, description, estimatedTime.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.post(
+        return self.patch(
             f"/api/v1/courses/{course_id}",
             json = request.model_dump(by_alias=True)
         )
