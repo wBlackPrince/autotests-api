@@ -1,7 +1,8 @@
 from clients.errors_schema import InternalErrorResponseSchema
 from clients.excersises.excersises_schema import CreateExerciseRequestSchema, CreateExerciseResponseSchema, \
-    ExerciseSchema, GetExerciseResponseSchema, UpdateExerciseRequestSchema, UpdateExerciseResponseSchema
-from tools.assertions.base import assert_equal
+    ExerciseSchema, GetExerciseResponseSchema, UpdateExerciseRequestSchema, UpdateExerciseResponseSchema, \
+    GetExercisesResponseSchema
+from tools.assertions.base import assert_equal, assert_length
 from tools.assertions.errors import assert_internal_error_response
 
 
@@ -33,6 +34,24 @@ def assert_get_exercise_response(
     :raises AssertionError: Если хотя бы одно поле не совпадает.
     """
     assert_exercise(create_exercise_response.exercise, get_exercise_response.exercise)
+
+
+def assert_get_exercises_response(
+        get_exercises_response: GetExercisesResponseSchema,
+        create_exercise_responses: list[CreateExerciseResponseSchema]
+):
+    """
+    проверяет что список полученных упражнений совпадает со списком созданных упражнений
+
+    :param get_exercises_response: список полученных упражнений
+    :param create_exercise_responses: список созданных упражнений
+    :raises AssertionError: Если длина коллекций не совпадает
+    или хотя одно из ожидаемых упражнений не с фактическим упражнением
+    """
+    assert_length(get_exercises_response.exercises, create_exercise_responses, "exercises")
+
+    for index, create_exercise_response in enumerate(create_exercise_responses):
+        assert_exercise(get_exercises_response.exercises[index], create_exercise_response.exercise)
 
 
 def assert_create_exercise_response(

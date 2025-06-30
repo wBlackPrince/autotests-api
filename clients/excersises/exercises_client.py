@@ -1,6 +1,6 @@
 from clients.api_client import APIClient
 from httpx import Response
-from clients.excersises.excersises_schema import GetExercisesRequestSchema, CreateExerciseRequestSchema, \
+from clients.excersises.excersises_schema import GetExercisesQuerySchema, CreateExerciseRequestSchema, \
     UpdateExerciseRequestSchema, GetExercisesResponseSchema, GetExerciseResponseSchema, \
     UpdateExerciseResponseSchema, CreateExerciseResponseSchema
 from clients.private_httpx_builder import AuthentificationUserSchema, get_private_httpx_client
@@ -11,7 +11,7 @@ class ExercisesClient(APIClient):
     Клиент для работы с api/v1/exercises
     '''
 
-    def get_exercises_api(self, query: GetExercisesRequestSchema) -> Response:
+    def get_exercises_api(self, query: GetExercisesQuerySchema) -> Response:
         '''
         Метод получения списка уроков у курса
 
@@ -58,7 +58,7 @@ class ExercisesClient(APIClient):
         '''
         return self.delete(f"api/v1/exercises/{exercise_id}")
 
-    def get_exercises(self, query: GetExercisesRequestSchema) -> GetExercisesResponseSchema:
+    def get_exercises(self, query: GetExercisesQuerySchema) -> GetExercisesResponseSchema:
         response = self.get_exercises_api(query)
         return GetExercisesResponseSchema.model_validate_json(response.text)
 

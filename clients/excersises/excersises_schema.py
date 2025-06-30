@@ -23,13 +23,13 @@ class GetExerciseResponseSchema(BaseModel):
     '''
     exercise: ExerciseSchema
 
-class GetExercisesRequestSchema(BaseModel):
+class GetExercisesQuerySchema(BaseModel):
     '''
     Описание структуры запроса для получения списка уроков у курса
     '''
     model_config = ConfigDict(populate_by_name=True)
 
-    course_id: str = Field(alias="course_id")
+    course_id: str = Field(alias="courseId")
 
 class GetExercisesResponseSchema(BaseModel):
     '''
