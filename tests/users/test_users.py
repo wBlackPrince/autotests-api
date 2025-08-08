@@ -20,11 +20,14 @@ from tools.allure.tags import AllureTag
 @pytest.mark.regression
 @allure.epic(AllureEpic.LMS)
 @allure.feature(AllureFeature.USERS)
+@allure.parent_suite(AllureEpic.LMS)
+@allure.suite(AllureFeature.USERS)
 @allure.tag(AllureTag.USERS, AllureTag.REGRESSION)
 class TestUsers:
     @pytest.mark.parametrize("email", ["mail.ru", "gmail.com", "example.com"])
     @allure.title("Create user")
     @allure.story(AllureStory.CREATE_ENTITY)
+    @allure.sub_suite(AllureStory.CREATE_ENTITY)
     @allure.tag(AllureTag.CREATE_ENTITY)
     @allure.severity(Severity.BLOCKER)
     def test_create_user(self, email: EmailStr, public_users_client: PublicUsersClient):
@@ -40,6 +43,7 @@ class TestUsers:
     @allure.title("Get user me")
     @allure.tag(AllureTag.GET_ENTITY)
     @allure.story(AllureStory.GET_ENTITY)
+    @allure.sub_suite(AllureStory.GET_ENTITY)
     @allure.severity(Severity.CRITICAL)
     def test_get_user_me(
             self,

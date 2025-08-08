@@ -23,10 +23,13 @@ import allure
 @pytest.mark.regression
 @allure.story(AllureEpic.LMS)
 @allure.feature(AllureFeature.COURSES)
+@allure.parent_suite(AllureEpic.LMS)
+@allure.suite(AllureFeature.COURSES)
 @allure.tag(AllureTag.COURSES, AllureTag.REGRESSION)
 class TestCourses:
     @allure.tag(AllureTag.GET_ENTITY)
     @allure.story(AllureStory.GET_ENTITY)
+    @allure.sub_suite(AllureStory.GET_ENTITY)
     @allure.severity(Severity.BLOCKER)
     @allure.title("Get courses")
     def test_get_courses(
@@ -44,8 +47,9 @@ class TestCourses:
 
         validate_json_schema(response.json(), GetCoursesResponseSchema.model_json_schema())
 
-    @allure.story(AllureStory.UPDATE_ENTITY)
     @allure.tag(AllureTag.UPDATE_ENTITY)
+    @allure.story(AllureStory.UPDATE_ENTITY)
+    @allure.sub_suite(AllureStory.UPDATE_ENTITY)
     @allure.severity(Severity.CRITICAL)
     @allure.title("Update courses")
     def test_update_course(self, courses_client: CoursesClient, function_course: CourseFixture):
@@ -63,6 +67,7 @@ class TestCourses:
         validate_json_schema(response.json(), UpdateCourseRequestSchema.model_json_schema())
 
     @allure.story(AllureStory.CREATE_ENTITY)
+    @allure.sub_suite(AllureStory.CREATE_ENTITY)
     @allure.tag(AllureTag.CREATE_ENTITY)
     @allure.severity(Severity.BLOCKER)
     @allure.title("Create course")
