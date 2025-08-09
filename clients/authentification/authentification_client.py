@@ -2,13 +2,14 @@ from httpx import Response
 from clients.api_client import APIClient
 from clients.authentification.authentification_schema import LoginRequestSchema, RefreshRequestSchema, LoginResponseSchema
 from clients.public_httpx_builder import get_public_httpx_client
-
+import allure
 
 class AuthentificationClient(APIClient):
     """
     Клиент для работы с /api/v1/authentication
     """
 
+    @allure.step("Authentificate user")
     def login_api(self, request: LoginRequestSchema) -> Response:
         """
         Метод выполняет аутентификацию пользователя.
@@ -18,6 +19,7 @@ class AuthentificationClient(APIClient):
         """
         return self.post("/api/v1/authentication/login", json = request.model_dump(by_alias=True))
 
+    @allure.step("Refresh authentification token")
     def refresh_api(self, request: RefreshRequestSchema) -> Response:
         """
         Метод обновляет токен авторизации.

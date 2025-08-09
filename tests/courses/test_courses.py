@@ -81,6 +81,7 @@ class TestCourses:
             previewFileId=function_file.response.file.id,
             createdByUserId=function_user.response.user.id
         )
+
         response = courses_client.create_course_api(request)
         response_data = CreateCourseResponseSchema.model_validate_json(response.text)
 
