@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTExVDE1OjM0OjUwLjEyNzUyNCIsInVzZXJfaWQiOiI3NDQyNzU3OC05Y2Y2LTRjMDQtOTQ1OS1mM2FmMDY2Y2QwMzkifQ.HN8BO21rVVjIrwbB0VIEnU8NUyltBSgYokoClF6qA4k'\
+ -H 'content-length: 410'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Fish single despite money.","maxScore":60,"minScore":8,"description":"Responsibility for low market industry. Produce finally process she.\nAlways true about official bank food. Chance describe individual behavior south. Member have site party human move low.","estimatedTime":"88 weeks","previewFileId":"50b9d99b-f0e6-47d3-bf53-67c70ee48979","createdByUserId":"74427578-9cf6-4c04-9459-f3af066cd039"}'

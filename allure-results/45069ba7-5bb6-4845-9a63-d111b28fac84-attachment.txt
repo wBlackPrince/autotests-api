@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTExVDE1OjM1OjExLjY3MzIwMSIsInVzZXJfaWQiOiJhODBjNThiMi1iODMzLTQ2OWItOWFmNC1iMDIyYTQ3OGMxYmMifQ.qKmC6xZF3UvNvcfvqtCQP3BlvIWvAsuNGZFSY2roB2U'\
+ -H 'content-length: 415'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Machine analysis near small stage like radio.","maxScore":52,"minScore":21,"description":"Similar season teach phone bill little discussion. Hope watch figure old safe knowledge best eight. Image maintain high way seat management you end. May raise remain against.","estimatedTime":"83 weeks","previewFileId":"596883a0-3468-4945-850f-50b8e64b7ec5","createdByUserId":"a80c58b2-b833-469b-9af4-b022a478c1bc"}'

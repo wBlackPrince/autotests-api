@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/exercises\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTExVDE1OjM1OjA0LjQ2OTA2NSIsInVzZXJfaWQiOiJhM2FkZWU0MC03ZDEzLTRlMDctOTc0Ny0wZmMxNWQzNTk3MzcifQ.9k4v2Jc2F2R3AfSE5O19RpZfOIppSkC3PtklZVni0Ts'\
+ -H 'content-length: 376'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Factor blue former parent travel station compare.","courseId":"9a3b5693-c56b-41e2-b160-d24e23f7a9f6","maxScore":82,"minScore":7,"orderIndex":35,"description":"In film past nor throw. Alone the social.\nFriend goal director break standard I able even. Almost impact vote prove face total. Sit describe effort improve full number attorney.","estimatedTime":"63 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/exercises\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTExVDE1OjM1OjE4LjgzNTk4NCIsInVzZXJfaWQiOiI5NmI3YWQwOC03NmNlLTQ0OWUtOTZhYi1jMjQ5Y2EzNGRiMWUifQ.Fq44bx3YGhPZfpNUMR0mhMlnAubC5Lh7Yc6b890gQvw'\
+ -H 'content-length: 365'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Less kind bill technology thousand.","courseId":"6c42567a-d200-4477-8d16-82f44fe44b61","maxScore":89,"minScore":3,"orderIndex":2,"description":"Peace discover drug story data research. Responsibility work some claim seem language ball believe. Address such kitchen I white.\nNote put article Mrs. Small sometimes institution.","estimatedTime":"100 weeks"}'

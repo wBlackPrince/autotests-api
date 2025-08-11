@@ -4,6 +4,9 @@ from pydantic import BaseModel, EmailStr
 from clients.authentification.authentification_schema import LoginRequestSchema
 from functools import lru_cache
 
+from clients.event_hooks import curl_event_hook
+
+
 class AuthentificationUserSchema(BaseModel, frozen=True):
     '''
     Структура запроса на получение приватного httpx клиента
@@ -27,5 +30,6 @@ def get_private_httpx_client(user: AuthentificationUserSchema) -> Client:
     return Client(
         timeout = 100,
         base_url = "http://localhost:8000",
-        headers = {"Authorization": f"Bearer {login_response.token.access_token}"}
+        headers = {"Authorization": f"Bearer {login_response.token.access_token}"},
+        event_hooks={"request": [curl_event_hook]}
     )

@@ -1,5 +1,8 @@
 from httpx import Client
 
+from clients.event_hooks import curl_event_hook
+
+
 def get_public_httpx_client() -> Client:
     """
     Функция создаёт экземпляр httpx.Client с базовыми настройками.
@@ -8,5 +11,6 @@ def get_public_httpx_client() -> Client:
     """
     return Client(
         timeout = 100,
-        base_url = "http://localhost:8000"
+        base_url = "http://localhost:8000",
+        event_hooks={"request": [curl_event_hook]}
     )

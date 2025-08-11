@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTExVDE1OjM0OjM1LjY3MDUzNiIsInVzZXJfaWQiOiJiOThmMjM3Yy03NzMyLTRjN2ItODE3My0xNzg3NDQ0Y2Y1YjYifQ.5akPJy51jviqW607NOX5z2cXN_GwviJGK0kECECH9bU'\
+ -H 'content-length: 390'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Despite agency low standard determine indeed assume race.","maxScore":63,"minScore":24,"description":"Visit fill would office. Late kid drop early ok.\nDescribe rather no bit type. Military important father individual director right hotel.","estimatedTime":"75 weeks","previewFileId":"9716aa3f-f7d4-40f0-ab29-4fa870092b34","createdByUserId":"b98f237c-7732-4c7b-8173-1787444cf5b6"}'

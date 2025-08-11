@@ -1,0 +1,11 @@
+curl -X 'PATCH'\
+ http://localhost:8000/api/v1/courses/1acff450-5aad-47f6-9a57-1798ce93d993\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTExVDE1OjM0OjQyLjkzOTc0MiIsInVzZXJfaWQiOiJjOGUwMjUxMi0wMzRkLTRmZjUtYWY4MC1kMmEyYjgxMjVmODEifQ.Adq00sCG1R7XaC_Llc7iBE2A4RVLROa9UL4IgYAlqq0'\
+ -H 'content-length: 217'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Trade standard fact government life.","maxScore":70,"minScore":19,"description":"Behavior when dog force.\nMore simple early recognize system including. Talk form several animal.","estimatedTime":"99 weeks"}'
