@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/exercises\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTEzVDE2OjU4OjA3Ljk0ODExOSIsInVzZXJfaWQiOiJhODczMWUwYi0zOTg0LTQ0NDMtOTk4YS1kNDViNzE0MWEyNmYifQ.zKcPjP9Grzr5lM7LcoCcqRWRuidRIDcd82nT7kwe6bk'\
+ -H 'content-length: 320'\
+ -H 'content-type: application/json'\
+ -d '{"title":"For discuss career scene.","courseId":"cb2354ba-8ab6-4ee4-82d5-12ff8c30844e","maxScore":96,"minScore":20,"orderIndex":81,"description":"Of economic individual. Allow compare include discover foreign add hand.\nModel best certain reach dark head federal. Move serious action dream.","estimatedTime":"100 weeks"}'
