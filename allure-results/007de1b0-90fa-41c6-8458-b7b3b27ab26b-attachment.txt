@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTEzVDE3OjI3OjMxLjA3MDUwOCIsInVzZXJfaWQiOiJkZDczMDUyMS1jMjg5LTQ0ZjgtYTY1Yy1mMWM3YWZhMDQ2NTAifQ.kflxppicHbZM_X0rqCTUWWX8v3DFAPVbA3GgPdZSuUY'\
+ -H 'content-length: 311'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Save add environmental although bill senior figure.","maxScore":78,"minScore":14,"description":"Always image mother more. Where throughout leader all my street.","estimatedTime":"50 weeks","previewFileId":"76b6cb0a-3701-4b24-b7aa-ba9e7606ce9e","createdByUserId":"dd730521-c289-44f8-a65c-f1c7afa04650"}'

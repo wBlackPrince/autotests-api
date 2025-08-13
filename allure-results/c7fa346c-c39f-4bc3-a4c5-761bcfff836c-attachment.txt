@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTEzVDE3OjI3OjIzLjgwNzU2MSIsInVzZXJfaWQiOiIzZWFkMWRmZC00OTA4LTRhYzUtYWM2Ny0yYWU5ZGI3OWI0ZmIifQ.AB0k0g5PFRA1SS1uW3d6NLc1OpI53B7IshzzOSzJGEM'\
+ -H 'content-length: 396'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Seat economic special.","maxScore":84,"minScore":30,"description":"Reveal only serve such wind. Watch much use couple be involve.\nStudy girl test prepare strategy discover. Skin behind issue join exactly write word. Message check center source.","estimatedTime":"67 weeks","previewFileId":"7ae7ae2a-1a60-45ef-bd2a-d904baccb009","createdByUserId":"3ead1dfd-4908-4ac5-ac67-2ae9db79b4fb"}'

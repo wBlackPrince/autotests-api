@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTEzVDE3OjI3OjAyLjEyOTk0MSIsInVzZXJfaWQiOiJmM2MzNGFhMi02NTE2LTQyMGEtODE0Ny1iNmNhNGVkYTY5OTUifQ.9LRe4Gwuc0ag2QjKTYcVGzAfwgcdjJS8HxjzofRs1zE'\
+ -H 'content-length: 392'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Camera add involve base friend produce bill.","maxScore":70,"minScore":21,"description":"Buy instead rule successful middle strategy stop our. See mother according stay skin. Writer start other money go.\nDrug along number major to election.","estimatedTime":"66 weeks","previewFileId":"4db54daf-2f2d-45ba-a157-c2d50c3d9e96","createdByUserId":"f3c34aa2-6516-420a-8147-b6ca4eda6995"}'

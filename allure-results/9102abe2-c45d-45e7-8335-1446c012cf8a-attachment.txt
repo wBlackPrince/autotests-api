@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTEzVDE3OjI3OjE2LjYyNzM1MyIsInVzZXJfaWQiOiJjZmUxM2RmZi0xNGNhLTQ0MjEtYmI1MS1mZjFlMWNiYmRjODcifQ.zLcLb8WvbB8JkC-0IO3-_5ipwRPKxiqNC6tvhX44yk4'\
+ -H 'content-length: 396'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Window wish travel program wonder magazine share.","maxScore":94,"minScore":19,"description":"Apply pay establish environmental local why job share. Address bed production campaign opportunity power anything. Old animal report language let else.","estimatedTime":"90 weeks","previewFileId":"63aef0f2-19cb-49d5-a7ac-8a6bc1ebd6e4","createdByUserId":"cfe13dff-14ca-4421-bb51-ff1e1cbbdc87"}'

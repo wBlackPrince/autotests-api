@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTEzVDE3OjI3OjM4LjMyMDU5MSIsInVzZXJfaWQiOiI3YjZkODg1Ni0xOTU4LTRkMzEtODVjMC0yNTc3YzM5NWM3ZTAifQ.eoBwy-TN80scjbJ46KI3gDPhDrVy9SqwWZ8xIsSY9vM'\
+ -H 'content-length: 417'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Great picture cup forget conference piece next.","maxScore":75,"minScore":16,"description":"Move however media condition accept single reveal. Response word my billion order something.\nRepresent particularly bad billion. While compare such wide owner thought argue.","estimatedTime":"90 weeks","previewFileId":"9d6853ec-0a27-4266-a597-3d4db6b1b2f5","createdByUserId":"7b6d8856-1958-4d31-85c0-2577c395c7e0"}'

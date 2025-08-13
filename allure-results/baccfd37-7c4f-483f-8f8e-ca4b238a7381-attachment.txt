@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTEzVDE3OjI3OjA5LjQxOTI5NyIsInVzZXJfaWQiOiJlNWViZmZiMy1jZjYzLTQxZTAtYjU3Yy04OTYyN2M0ZWZlZWQifQ.kQ_n7POtAHFY3nglXt6zaDzW5Ln_NWZ9AqeB8D2y4TA'\
+ -H 'content-length: 409'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Something amount report effort suddenly stop fact for.","maxScore":91,"minScore":30,"description":"Current ten one they. Book yeah Mr improve center make leave. Loss page learn charge.\nWill concern discussion summer year. Or again mother worry type finally.","estimatedTime":"80 weeks","previewFileId":"e330c328-361d-46af-9052-78b2c5e887b2","createdByUserId":"e5ebffb3-cf63-41e0-b57c-89627c4efeed"}'
