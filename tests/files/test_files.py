@@ -56,6 +56,24 @@ class TestFiles:
 
         validate_json_schema(response.json(), GetFileResponseSchema.model_json_schema())
 
+    @allure.tag(AllureTag.DELETE_ENTITY)
+    @allure.story(AllureStory.DELETE_ENTITY)
+    @allure.sub_suite(AllureStory.DELETE_ENTITY)
+    @allure.severity(Severity.NORMAL)
+    @allure.title("Delete file")
+    def test_delete_file(self, files_client: FilesClient, function_file: FileFixture):
+        delete_response = files_client.delete_file_api(function_file.response.file.id)
+        assert_status_code(delete_response.status_code, HTTPStatus.OK)
+
+        get_response = files_client.get_file_api(function_file.response.file.id)
+        get_response_data = InternalErrorResponseSchema.model_validate_json(get_response.text)
+
+        assert_status_code(get_response.status_code, HTTPStatus.NOT_FOUND)
+        assert_file_not_found_response(get_response_data)
+
+        validate_json_schema(get_response.json(), InternalErrorResponseSchema.model_json_schema())
+
+
     @allure.tag(AllureTag.VALIDATE_ENTITY)
     @allure.story(AllureStory.VALIDATE_ENTITY)
     @allure.sub_suite(AllureStory.VALIDATE_ENTITY)
@@ -85,23 +103,6 @@ class TestFiles:
         assert_create_file_with_empty_filename_response(response_data)
 
         validate_json_schema(response.json(), ValidationErrorResponseSchema.model_json_schema())
-
-    @allure.tag(AllureTag.DELETE_ENTITY)
-    @allure.story(AllureStory.DELETE_ENTITY)
-    @allure.sub_suite(AllureStory.DELETE_ENTITY)
-    @allure.severity(Severity.NORMAL)
-    @allure.title("Delete file")
-    def test_delete_file(self, files_client: FilesClient, function_file: FileFixture):
-        delete_response = files_client.delete_file_api(function_file.response.file.id)
-        assert_status_code(delete_response.status_code, HTTPStatus.OK)
-
-        get_response = files_client.get_file_api(function_file.response.file.id)
-        get_response_data = InternalErrorResponseSchema.model_validate_json(get_response.text)
-
-        assert_status_code(get_response.status_code, HTTPStatus.NOT_FOUND)
-        assert_file_not_found_response(get_response_data)
-
-        validate_json_schema(get_response.json(), InternalErrorResponseSchema.model_json_schema())
 
     @allure.tag(AllureTag.VALIDATE_ENTITY)
     @allure.story(AllureStory.VALIDATE_ENTITY)

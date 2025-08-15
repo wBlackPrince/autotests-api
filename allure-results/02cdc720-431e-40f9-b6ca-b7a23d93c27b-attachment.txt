@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE1VDExOjA0OjQ4LjU5ODkyMiIsInVzZXJfaWQiOiIxYTY2YmVlNy1hMjUwLTQ2NzUtYWE1NS0wYTdhNTg3NzkwNTUifQ.amzibgQwBgQqzTjQVmWYxs-K2LN4Ad5VJNaPHEyXAV0'\
+ -H 'content-length: 400'\
+ -H 'content-type: application/json'\
+ -d '{"title":"New store television contain whose require security.","maxScore":88,"minScore":20,"description":"Fine just fill pull. Simply hear thus civil yet down father.\nWait federal note sell wonder save. Class put between paper call herself. Feel start life.","estimatedTime":"56 weeks","previewFileId":"3082f242-31e0-424f-b119-650cabf49631","createdByUserId":"1a66bee7-a250-4675-aa55-0a7a58779055"}'

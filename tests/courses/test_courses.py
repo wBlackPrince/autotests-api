@@ -1,3 +1,4 @@
+import time
 from http import HTTPStatus
 import pytest
 from allure_commons.types import Severity

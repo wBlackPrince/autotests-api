@@ -3,8 +3,7 @@ from clients.authentification.authentification_client import get_authentificatio
 from pydantic import BaseModel, EmailStr
 from clients.authentification.authentification_schema import LoginRequestSchema
 from functools import lru_cache
-
-from clients.event_hooks import curl_event_hook
+from clients.event_hooks import curl_event_hook, log_request_event_hook, log_response_event_hook
 from config import settings
 
 
@@ -32,5 +31,8 @@ def get_private_httpx_client(user: AuthentificationUserSchema) -> Client:
         timeout = 100,
         base_url = settings.http_client.client_url,
         headers = {"Authorization": f"Bearer {login_response.token.access_token}"},
-        event_hooks={"request": [curl_event_hook]}
+        event_hooks={
+            "request": [curl_event_hook, log_request_event_hook],
+            "response": [log_response_event_hook]
+        }
     )

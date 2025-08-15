@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE1VDExOjA0OjI3LjEzOTUwOCIsInVzZXJfaWQiOiIyNjU2MGM0Mi00NjcyLTQ3NzEtYmQ1Ni05MWY3MGJmZmU1NjgifQ.OL9r7ll6rm-9W_3_OiolNuckklJsyGS7c8w40Q-wLNI'\
+ -H 'content-length: 327'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Edge city political him director.","maxScore":75,"minScore":3,"description":"Attorney unit process staff southern require. Design positive air coach east administration worker.","estimatedTime":"56 weeks","previewFileId":"7f348f22-ca88-4a81-9a3f-da6173677d76","createdByUserId":"26560c42-4672-4771-bd56-91f70bffe568"}'

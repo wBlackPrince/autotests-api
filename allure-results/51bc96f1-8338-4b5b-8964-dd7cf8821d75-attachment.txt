@@ -1,0 +1,18 @@
+[32mINFO    [0m HTTP_logger:event_hooks.py:19 Make POST request to http://localhost:8000/api/v1/users
+[32mINFO    [0m HTTP_logger:event_hooks.py:22 Got 200 OK from http://localhost:8000/api/v1/users
+[32mINFO    [0m HTTP_logger:event_hooks.py:19 Make POST request to http://localhost:8000/api/v1/authentication/login
+[32mINFO    [0m HTTP_logger:event_hooks.py:22 Got 200 OK from http://localhost:8000/api/v1/authentication/login
+[32mINFO    [0m HTTP_logger:event_hooks.py:19 Make POST request to http://localhost:8000/api/v1/files
+[32mINFO    [0m HTTP_logger:event_hooks.py:22 Got 200 OK from http://localhost:8000/api/v1/files
+[32mINFO    [0m HTTP_logger:event_hooks.py:19 Make POST request to http://localhost:8000/api/v1/courses
+[32mINFO    [0m HTTP_logger:event_hooks.py:22 Got 200 OK from http://localhost:8000/api/v1/courses
+[32mINFO    [0m BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+[32mINFO    [0m COURSES_ASSERTIONS:courses.py:85 Check create course response
+[32mINFO    [0m BASE_ASSERTIONS:base.py:35 Check that title equals to Edge city political him director.
+[32mINFO    [0m BASE_ASSERTIONS:base.py:35 Check that max_score equals to 75
+[32mINFO    [0m BASE_ASSERTIONS:base.py:35 Check that min_score equals to 3
+[32mINFO    [0m BASE_ASSERTIONS:base.py:35 Check that description equals to Attorney unit process staff southern require. Design positive air coach east administration worker.
+[32mINFO    [0m BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 56 weeks
+[32mINFO    [0m BASE_ASSERTIONS:base.py:35 Check that preview_file_id equals to 7f348f22-ca88-4a81-9a3f-da6173677d76
+[32mINFO    [0m BASE_ASSERTIONS:base.py:35 Check that created_by_user_id equals to 26560c42-4672-4771-bd56-91f70bffe568
+[32mINFO    [0m SCHEMA_ASSERTIONS:schema.py:20 Validation JSON Schema
