@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE2VDEwOjEwOjAyLjYyMjAwMyIsInVzZXJfaWQiOiI0MjlkNzIwMC1jYTBkLTRmODgtYTM5Mi1mMWRlMWJjMGY0NzcifQ.-xXsItlKtcwSNLHb6oEXz3zqRX1G0tjO1WCGrEH6u2E'\
+ -H 'content-length: 394'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Order guess campaign over spring protect blue.","maxScore":59,"minScore":13,"description":"Whether leader senior rich type whom.\nRise stop dog professor hot mother officer resource.\nSon consumer fund around.\nFear station coach accept large.","estimatedTime":"77 weeks","previewFileId":"d9652405-1fe9-4084-a0dd-7708c17e31cb","createdByUserId":"429d7200-ca0d-4f88-a392-f1de1bc0f477"}'

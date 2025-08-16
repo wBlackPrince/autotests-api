@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE2VDEwOjA5OjU0Ljk4MDI0NyIsInVzZXJfaWQiOiI2MmI4MjcyMC1hZDFkLTQ5MWItYjE3OS1kOGIyOWIzMDBhOTkifQ.8gLKgF9PzA10KgAPjJGPHRgUhxM2vGiw3RJ8UehMDno'\
+ -H 'content-length: 409'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Ten collection here from.","maxScore":79,"minScore":25,"description":"Whom in development. Heart floor wife team good. Article technology amount ready window investment southern.\nStatement serve hair make change level. Image them pay traditional whole sign.","estimatedTime":"76 weeks","previewFileId":"f717d5fe-5889-47d1-b9ba-d3504533ae6d","createdByUserId":"62b82720-ad1d-491b-b179-d8b29b300a99"}'

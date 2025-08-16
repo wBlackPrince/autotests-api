@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE2VDEwOjA5OjU1LjE5MTAwNyIsInVzZXJfaWQiOiI3YjZjOGIzNC1iYmIwLTQxOTUtOGUxMi0wMGRiOTRhNWQ4NjIifQ.96X2Unn6rqFtF22dH77sWWoJr-QBJR4uwMRNzyR75X8'\
+ -H 'content-length: 404'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Determine region television similar.","maxScore":81,"minScore":29,"description":"Easy commercial each maybe professor. Capital capital much true pretty know.\nSituation position culture especially civil interesting same. Apply newspaper of so admit own.","estimatedTime":"75 weeks","previewFileId":"7cd44d89-5175-4065-912f-f2ba1b41d090","createdByUserId":"7b6c8b34-bbb0-4195-8e12-00db94a5d862"}'
