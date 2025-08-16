@@ -1,0 +1,22 @@
+[32mINFO    [0m HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/users
+[32mINFO    [0m HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/users
+[32mINFO    [0m HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/authentication/login
+[32mINFO    [0m HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/authentication/login
+[32mINFO    [0m HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/files
+[32mINFO    [0m HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/files
+[32mINFO    [0m HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/courses
+[32mINFO    [0m HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/courses
+[32mINFO    [0m HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/exercises
+[32mINFO    [0m HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/exercises
+[32mINFO    [0m HTTP_logger:event_hooks.py:25 Make PATCH request to http://localhost:8000/api/v1/exercises/75681110-fcaa-47fc-bbd9-f01ca8f26142
+[32mINFO    [0m HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/exercises/75681110-fcaa-47fc-bbd9-f01ca8f26142
+[32mINFO    [0m BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+[32mINFO    [0m FILES_ASSERTIONS:exercises.py:107 Check update exercise response
+[32mINFO    [0m BASE_ASSERTIONS:base.py:35 Check that title equals to Claim hope already bank.
+[32mINFO    [0m BASE_ASSERTIONS:base.py:35 Check that min_score equals to 1
+[32mINFO    [0m BASE_ASSERTIONS:base.py:35 Check that max_score equals to 68
+[32mINFO    [0m BASE_ASSERTIONS:base.py:35 Check that order_index equals to 22
+[32mINFO    [0m BASE_ASSERTIONS:base.py:35 Check that description equals to Minute operation focus nearly. Deep fly near approach lawyer.
+Today close green skill far suffer place. Anything music series. Attorney east better story brother coach.
+[32mINFO    [0m BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 53 weeks
+[32mINFO    [0m SCHEMA_ASSERTIONS:schema.py:20 Validation JSON Schema

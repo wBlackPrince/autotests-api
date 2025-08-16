@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE2VDA5OjM4OjMyLjAzOTQzNSIsInVzZXJfaWQiOiJkOGY1NDc2Ny0wNjJkLTQ2NTQtYjVkNS0xYjMwMDlhOTAyYjUifQ.Cw5sonaXZ5tmzaz1CJF4U-xRhjyq2oZ16r-bHAgazFo'\
+ -H 'content-length: 432'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Part anyone successful us less hospital.","maxScore":56,"minScore":8,"description":"Final season behind visit firm our senior could. Several whatever among those true responsibility garden. People one red while our bad high. Upon manager society participant at situation interview.","estimatedTime":"52 weeks","previewFileId":"b8c98c67-17f4-4a96-adf7-8a578c76edea","createdByUserId":"d8f54767-062d-4654-b5d5-1b3009a902b5"}'

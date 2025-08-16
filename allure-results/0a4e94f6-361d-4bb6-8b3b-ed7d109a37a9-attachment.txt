@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/exercises\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE2VDA5OjM4OjI0Ljk3NDc3NSIsInVzZXJfaWQiOiJiZGE5Y2U1MS1jOTE5LTRlZmMtYjlmMi0xOGFkYzE0YmM3N2EifQ.OYXtC_7DsUB8TPfVPtP__H9Si0tvSBkZnGuQcSiFm7o'\
+ -H 'content-length: 263'\
+ -H 'content-type: application/json'\
+ -d '{"title":"I sit them strategy friend sport.","courseId":"54ee56ec-60ed-48d4-a7d9-25ba450df26e","maxScore":97,"minScore":3,"orderIndex":47,"description":"Investment think state difference drug. Parent indeed even everybody mind second.","estimatedTime":"88 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE2VDA5OjM4OjMyLjI0OTI1OCIsInVzZXJfaWQiOiJjMjY4OGFhNC0wNGU2LTRhMGMtOGY4ZS0yMTE5MTFkNjQ5NTYifQ.MlKvXncPrid8_aTZjB4ZTF4o_SJYS7M_uQSNTxbIbcg'\
+ -H 'content-length: 359'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Student director American author thank.","maxScore":58,"minScore":10,"description":"Paper choice fund people these.\nThough door without mission. Charge every for deep real language. Enter eat ability others.","estimatedTime":"65 weeks","previewFileId":"d16e1bad-c716-40d4-950d-750c19063e67","createdByUserId":"c2688aa4-04e6-4a0c-8f8e-211911d64956"}'

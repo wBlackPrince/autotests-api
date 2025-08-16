@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE2VDA5OjM4OjI0Ljk3NDc3NSIsInVzZXJfaWQiOiJiZGE5Y2U1MS1jOTE5LTRlZmMtYjlmMi0xOGFkYzE0YmM3N2EifQ.OYXtC_7DsUB8TPfVPtP__H9Si0tvSBkZnGuQcSiFm7o'\
+ -H 'content-length: 353'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Later piece class news human structure.","maxScore":95,"minScore":13,"description":"Kid price bring news believe everybody. Laugh then common direction door nothing. Body position fine account language.","estimatedTime":"55 weeks","previewFileId":"5fbd0b50-70f5-49bd-9996-40754477660f","createdByUserId":"bda9ce51-c919-4efc-b9f2-18adc14bc77a"}'

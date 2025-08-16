@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE2VDA5OjM4OjI0LjM0OTQyOCIsInVzZXJfaWQiOiJiMGI4OGQ3NS0zZjkwLTQxNDUtYjI5Mi1iNWRkM2E3NzJmZTQifQ.rmLv93W9GYN6EWQf0YFQxzZzimHZ5x6ZOhe8TV4dRAY'\
+ -H 'content-length: 373'\
+ -H 'content-type: application/json'\
+ -d '{"title":"See fine summer watch through professional site newspaper.","maxScore":82,"minScore":20,"description":"Perform personal smile stuff blood. Sign responsibility reduce end little let. System future deal myself cut president.","estimatedTime":"70 weeks","previewFileId":"70663495-c99d-4005-8704-d85b50aece5d","createdByUserId":"b0b88d75-3f90-4145-b292-b5dd3a772fe4"}'

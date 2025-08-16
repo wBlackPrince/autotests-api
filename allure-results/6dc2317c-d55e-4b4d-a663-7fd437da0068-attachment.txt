@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE2VDA5OjM4OjMyLjkwMzY4MyIsInVzZXJfaWQiOiI1YWVkMzVlOC1jMjNkLTRjOTktOTQ2Zi05OTI1MzRjNjA1N2MifQ._5ZuK6DVYEyhdcIWX0fwREQkto9B0IFhwPae8SasHyY'\
+ -H 'content-length: 375'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Professional community air choose compare.","maxScore":89,"minScore":18,"description":"Institution level grow not. Clear energy argue consumer.\nAlso mission talk ready. Charge computer administration could woman movie hear.","estimatedTime":"70 weeks","previewFileId":"da492825-036e-4cca-8fc8-ed783a31d4fa","createdByUserId":"5aed35e8-c23d-4c99-946f-992534c6057c"}'

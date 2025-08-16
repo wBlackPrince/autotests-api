@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/exercises\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE2VDA5OjM4OjI0LjM0OTQyOCIsInVzZXJfaWQiOiJiMGI4OGQ3NS0zZjkwLTQxNDUtYjI5Mi1iNWRkM2E3NzJmZTQifQ.rmLv93W9GYN6EWQf0YFQxzZzimHZ5x6ZOhe8TV4dRAY'\
+ -H 'content-length: 375'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Popular entire choose possible group.","courseId":"6fae1069-cd3f-4dd6-918e-bc3e20709a6c","maxScore":53,"minScore":25,"orderIndex":56,"description":"Seek Democrat film share out. Himself voice they week him kind. Gas newspaper Mr.\nEconomy bag section then hear. Anyone image always car most write. Career ever fish treat short fear ten.","estimatedTime":"57 weeks"}'
