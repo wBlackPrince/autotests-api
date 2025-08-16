@@ -1,8 +1,6 @@
 from pydantic import BaseModel, HttpUrl, FilePath, DirectoryPath
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from typing import Self
-import platform
-import sys
 
 class HttpClientConfig(BaseModel):
     url: HttpUrl
@@ -25,8 +23,6 @@ class Settings(BaseSettings):
     test_data: TestDataConfig
     http_client: HttpClientConfig
     allure_results_dir: DirectoryPath = DirectoryPath("allure-results")
-    os_info: str = f"{platform.system()}, {platform.version()}"
-    python_version: str = sys.version
 
     @classmethod
     def initialize(cls) -> Self:

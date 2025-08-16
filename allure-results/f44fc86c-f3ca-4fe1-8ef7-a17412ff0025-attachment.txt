@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE2VDExOjI2OjAyLjgzMDcxNSIsInVzZXJfaWQiOiIxODllZWU4Mi1jMTE4LTQyMzYtYmVlZS0yOTZiNWNhZDUzZDQifQ.F9g4rYpKrX51E3H5XfX5y1w3Lnkzi_QFBAJDIC9Eplk'\
+ -H 'content-length: 343'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Style send occur realize such.","maxScore":50,"minScore":28,"description":"Get pretty hand evening. Consumer financial wait their well indicate third. Simple project thought reflect scientist.","estimatedTime":"60 weeks","previewFileId":"81e67c01-8430-427d-8af9-8ffd07161308","createdByUserId":"189eee82-c118-4236-beee-296b5cad53d4"}'

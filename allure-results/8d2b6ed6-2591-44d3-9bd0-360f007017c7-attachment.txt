@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE2VDExOjI1OjU2LjU0ODMzNCIsInVzZXJfaWQiOiJmZjZhN2NlMi05YTEzLTQ1ZDMtOWMwZS0wOWM4NTBjZmY2NTYifQ.B8UoVQ1OyO8n17RSgsZYJn_WuvsH0Q9K7fCiI2AwydI'\
+ -H 'content-length: 321'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Item policy loss whose.","maxScore":83,"minScore":6,"description":"Brother land doctor write open test though. Attack teacher forward win his pattern. Old somebody raise.","estimatedTime":"58 weeks","previewFileId":"ead1df0b-6b78-4c2a-b3bd-3ff978f06e37","createdByUserId":"ff6a7ce2-9a13-45d3-9c0e-09c850cff656"}'

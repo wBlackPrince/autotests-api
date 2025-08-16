@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE2VDExOjI2OjAzLjgyMzEyOSIsInVzZXJfaWQiOiIyMDgyZmQxOS1mYTc4LTQ5OWUtODRiYy1kOTMyMmY5NjEyMWEifQ.OMT8AnaOlvBHAyIttOEzBX5ZaaOnPVmdaXNJg9ERZII'\
+ -H 'content-length: 347'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Feel source language ten.","maxScore":91,"minScore":14,"description":"Father court nice instead direction. Likely despite something blue federal life. Huge sit serve prepare yet material southern.","estimatedTime":"75 weeks","previewFileId":"11b69506-de99-4666-9f78-0f6667e39bf0","createdByUserId":"2082fd19-fa78-499e-84bc-d9322f96121a"}'
