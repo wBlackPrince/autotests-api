@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE3VDA5OjIwOjEyLjcyMTI5NyIsInVzZXJfaWQiOiI4ZjFiMDRkZC1hMGJiLTRjZWQtOGRiNy0xZDUxN2E2MDQxYTcifQ.KSr3TJOPQYNYmYn6bYfGHuqZh1IWNQP1VcAxg5BHeAA'\
+ -H 'content-length: 393'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Specific senior interview do.","maxScore":59,"minScore":13,"description":"Field start cost down treat young yeah. Girl get system financial.\nPositive star process nothing color. Strategy what who culture stock. Short citizen son radio small.","estimatedTime":"68 weeks","previewFileId":"57777580-bec7-4521-948d-1fa3095e5c68","createdByUserId":"8f1b04dd-a0bb-4ced-8db7-1d517a6041a7"}'

@@ -1,0 +1,11 @@
+curl -X 'PATCH'\
+ http://localhost:8000/api/v1/courses/976ac6bf-7471-49a7-bea2-927e671b3deb\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE3VDA5OjIwOjA0LjQ3MjQ3MiIsInVzZXJfaWQiOiIzYjI0ODRjMC04ZDM4LTRiMmMtOWEzMi1hMjA3ZTVhNjlkMWQifQ.J0bJjxZOWoUGurX3RBeVY_BUNWI9FLR6s7-wq10KZlE'\
+ -H 'content-length: 259'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Education pay ready total for.","maxScore":57,"minScore":22,"description":"Bad audience since. Lay during responsibility movie.\nThough control smile fall say. Various note treatment lay feel on. At purpose range season.","estimatedTime":"62 weeks"}'

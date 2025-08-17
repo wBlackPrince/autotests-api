@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE3VDA5OjIwOjA4LjUwNTgyMSIsInVzZXJfaWQiOiIxZDQ0MTdmYy0xNmRjLTRmNzktYjI1NS1mM2I0ZWU3NzY1OWIifQ.xMh_oFsTc_k2q-toT4oDB--ag5CrQyqmlyMU3wJfSjA'\
+ -H 'content-length: 302'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Region role beautiful despite.","maxScore":99,"minScore":1,"description":"Similar poor industry lay past. Method throw might understand quite customer.","estimatedTime":"62 weeks","previewFileId":"95afde85-b7df-454f-9c72-953ab2bde8ba","createdByUserId":"1d4417fc-16dc-4f79-b255-f3b4ee77659b"}'

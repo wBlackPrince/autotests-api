@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE3VDA5OjIwOjAyLjg4OTc1OCIsInVzZXJfaWQiOiI1NjY5YjU3Yy1mM2Y4LTQzMWItODg4OS03MzcwYzQwZTI5YWMifQ.i4pLgOnJYPG9ATMLJkdt_IYRJ14g18yzthCHunQxY4M'\
+ -H 'content-length: 397'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Until meeting lot turn store since either.","maxScore":95,"minScore":4,"description":"Company capital thus result view character. Such knowledge outside or near tax.\nProcess nearly surface in report service system. Focus health here charge firm.","estimatedTime":"86 weeks","previewFileId":"e086d500-0de7-428c-9f2c-1e4beca98d5b","createdByUserId":"5669b57c-f3f8-431b-8889-7370c40e29ac"}'

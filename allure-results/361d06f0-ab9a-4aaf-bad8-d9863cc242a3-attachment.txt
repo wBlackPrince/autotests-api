@@ -1,0 +1,11 @@
+curl -X 'PATCH'\
+ http://localhost:8000/api/v1/exercises/882e97bd-a534-41f4-803b-9bcf14a5a779\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE3VDA5OjIwOjA0LjY2ODI2NyIsInVzZXJfaWQiOiI2OWU5OWU4OC1lMzM1LTQzNmQtOWIyNy00MzFhNjc3Zjk0YWUifQ.wnLWcxGORcE108emzXhMJTW0Z_wYPUS6-ncZ9Hngd_w'\
+ -H 'content-length: 343'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Marriage force country camera officer another.","maxScore":52,"minScore":7,"orderIndex":10,"description":"Surface dinner lawyer though rule improve. Few land point cut little heavy customer. Certain firm take account because.\nCover sense wear successful perhaps. Better true that Republican travel full.","estimatedTime":"88 weeks"}'
