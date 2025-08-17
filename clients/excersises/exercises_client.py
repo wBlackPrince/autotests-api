@@ -20,7 +20,7 @@ class ExercisesClient(APIClient):
         :param query: Словарь с course_id
         :return: Ответ от сервера в виде объекта httpx.Response
         '''
-        return self.get(f"{ApiRoutes.EXERCISES}", params=query.model_dump(by_alias=True))
+        return self.get(ApiRoutes.EXERCISES, params=query.model_dump(by_alias=True))
 
     @allure.step("Get exercise by {exercise_id}")
     def get_exercise_api(self, exercise_id: str) -> Response:
@@ -40,7 +40,7 @@ class ExercisesClient(APIClient):
         :param request: Словарь с title, courseId, maxScore, minScore, orderIndex, description, estimatedTime
         :return: Ответ от сервера в виде объекта httpx.Response
         '''
-        return self.post(f"{ApiRoutes.EXERCISES}", json=request.model_dump(by_alias=True))
+        return self.post(ApiRoutes.EXERCISES, json=request.model_dump(by_alias=True))
 
     @allure.step("Update exercise by {exercise_id}")
     def update_exercise_api(self, exercise_id: str, request: UpdateExerciseRequestSchema) -> Response:

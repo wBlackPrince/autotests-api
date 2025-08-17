@@ -18,7 +18,7 @@ class PublicUsersClient(APIClient):
         :param request: Словарь с email, паролем, фамилией, именем и вторым именем
         :return: Ответ от сервера в виде объекта httpx.Response
         '''
-        return self.post(f"{ApiRoutes.USERS}", json = request.model_dump(by_alias=True))
+        return self.post(ApiRoutes.USERS, json = request.model_dump(by_alias=True))
 
     def create_user(self, request: CreateUserRequestSchema) -> CreateUserResponseSchema:
         '''

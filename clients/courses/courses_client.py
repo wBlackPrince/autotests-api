@@ -20,8 +20,8 @@ class CoursesClient(APIClient):
         :return: Ответ от сервера в виде объекта httpx.Response
         """
         return self.get(
-            f"{ApiRoutes.COURSES}",
-                params = query.model_dump(by_alias=True)
+            ApiRoutes.COURSES,
+            params = query.model_dump(by_alias=True)
         )
 
     @allure.step("Get course by {course_id}")
@@ -58,8 +58,8 @@ class CoursesClient(APIClient):
         :return: Ответ от сервера в виде объекта httpx.Response
         """
         return self.post(
-            f"{ApiRoutes.COURSES}",
-                json=request.model_dump(by_alias=True)
+            ApiRoutes.COURSES,
+            json=request.model_dump(by_alias=True)
         )
 
 
