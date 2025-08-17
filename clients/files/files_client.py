@@ -18,7 +18,7 @@ class FilesClient(APIClient):
         :param file_id: Идентификатор файла.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.get(f"{str(ApiRoutes.FILES)}/{file_id}")
+        return self.get(f"{ApiRoutes.FILES}/{file_id}")
 
     @allure.step("Delete file by {file_id}")
     def delete_file_api(self, file_id: str) -> Response:
@@ -28,7 +28,7 @@ class FilesClient(APIClient):
         :param file_id: Идентификатор файла.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.delete(f"{str(ApiRoutes.FILES)}/{file_id}")
+        return self.delete(f"{ApiRoutes.FILES}/{file_id}")
 
     @allure.step("Create file")
     def create_file_api(self, request: CreateFileRequestSchema) -> Response:
@@ -39,7 +39,7 @@ class FilesClient(APIClient):
         :return: Ответ от сервера в виде объекта httpx.Response
         """
         return self.post(
-            f"{str(ApiRoutes.FILES)}",
+            f"{ApiRoutes.FILES}",
             data = request.model_dump(by_alias=True, exclude={"upload_file"}),
             files = {"upload_file": request.upload_file.read_bytes()}
         )

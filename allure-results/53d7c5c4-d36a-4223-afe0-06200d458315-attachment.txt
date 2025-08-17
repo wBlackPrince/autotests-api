@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE3VDExOjMwOjEwLjg2Nzc3NyIsInVzZXJfaWQiOiJlMDQxODhiNi0xZmI5LTQzNjctODAzZi0yODI0MWYxOTcxMDYifQ.T_qcMAgtRrOdHd6c0ptwSPEFOnSoCTUwCBBQ4rko48s'\
+ -H 'content-length: 419'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Scene population stand deep try.","maxScore":65,"minScore":24,"description":"Mission believe age production. Since determine former play whole security car no. Forward source more music debate career. Pattern region energy few appear past.\nCut available whether pick.","estimatedTime":"98 weeks","previewFileId":"138ea130-4b1f-4dfa-b1dc-e337a818b91f","createdByUserId":"e04188b6-1fb9-4367-803f-28241f197106"}'

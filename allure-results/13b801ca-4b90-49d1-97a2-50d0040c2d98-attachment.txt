@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE3VDExOjMwOjAyLjk5MTMxMiIsInVzZXJfaWQiOiI1ZTllYmI1Ny01N2EyLTRkOTctOTViYS02Njc2OTU0OWQ0OGQifQ.09onIStdTdiReHvgLKMY4dWvm06STfihMrZxapOqHis'\
+ -H 'content-length: 355'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Cell reason situation politics own.","maxScore":57,"minScore":3,"description":"Marriage really current same could time. Health kind seat plant keep enter. Produce several report different every feel push.","estimatedTime":"73 weeks","previewFileId":"869a3893-a1d4-4aed-9e96-28bdae64b00b","createdByUserId":"5e9ebb57-57a2-4d97-95ba-66769549d48d"}'

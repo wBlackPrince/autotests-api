@@ -18,7 +18,7 @@ class AuthentificationClient(APIClient):
         :param request: Словарь с email и password.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.post(f"{str(ApiRoutes.AUTHENTIFICATION)}/login", json = request.model_dump(by_alias=True))
+        return self.post(f"{ApiRoutes.AUTHENTIFICATION}/login", json = request.model_dump(by_alias=True))
 
     @allure.step("Refresh authentification token")
     def refresh_api(self, request: RefreshRequestSchema) -> Response:
@@ -28,7 +28,7 @@ class AuthentificationClient(APIClient):
         :param request: Словарь с refreshToken.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.post(f"{str(ApiRoutes.AUTHENTIFICATION)}/refresh", json = request.model_dump(by_alias=True))
+        return self.post(f"{ApiRoutes.AUTHENTIFICATION}/refresh", json = request.model_dump(by_alias=True))
 
 
     def login(self, request: LoginRequestSchema) -> LoginResponseSchema:

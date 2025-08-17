@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE3VDExOjMwOjA2LjkxNjE4NyIsInVzZXJfaWQiOiJlNmI2MTYyMi01ZGQzLTQyNTEtOTY2YS02ZTkwNDQyNGUzZDcifQ.WBGP0Z7mavqtBbJgQ8X60goxxs26ONj6uR6MUDwjqrg'\
+ -H 'content-length: 391'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Bring accept officer including show.","maxScore":85,"minScore":29,"description":"Better range around. Only around total success source. Age goal single.\nOk wear computer others together reflect guy. Describe sea risk what in wear industry.","estimatedTime":"95 weeks","previewFileId":"159f3e3c-5796-464a-ad0a-7d3fffe76f86","createdByUserId":"e6b61622-5dd3-4251-966a-6e904424e3d7"}'
