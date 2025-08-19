@@ -1,0 +1,19 @@
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_logger:event_hooks.py:25 Make PATCH request to http://localhost:8000/api/v1/courses/426b5590-fb6c-4a61-a4ac-bbb3473e667b
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/courses/426b5590-fb6c-4a61-a4ac-bbb3473e667b
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:24 Check update course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that title equals to New provide official right doctor chair risk operation.
+INFO     BASE_ASSERTIONS:base.py:35 Check that min_score equals to 4
+INFO     BASE_ASSERTIONS:base.py:35 Check that max_score equals to 80
+INFO     BASE_ASSERTIONS:base.py:35 Check that description equals to Form century spend security yet son. City case with partner debate style story. Rock mean bag end which born.
+How this effect whom. Of turn environmental community.
+INFO     BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 79 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validation JSON Schema

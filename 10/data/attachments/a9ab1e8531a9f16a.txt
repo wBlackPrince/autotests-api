@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE5VDEzOjIxOjE0LjAwOTcwNyIsInVzZXJfaWQiOiJhYzQyMTdlOC0wMDBmLTQ5MTQtOWFkYi0zMDE5MDcxZDZhN2EifQ.pr3a_SEJP8HxzvaxiIx_MJOLCC4JOl_ctSHQ_P9RXnY'\
+ -H 'content-length: 310'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Feeling past involve least general.","maxScore":75,"minScore":14,"description":"Process out physical consumer year. Attorney area goal loss order receive rate.","estimatedTime":"64 weeks","previewFileId":"2828807f-b305-49cd-9081-937d8a563a36","createdByUserId":"ac4217e8-000f-4914-9adb-3019071d6a7a"}'

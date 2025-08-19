@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE5VDEzOjIxOjExLjkzMjA3NSIsInVzZXJfaWQiOiJiNjUyNjEzNi0wMDFjLTQ1MzQtODNlMy1jOTE0NTQ3NDVjN2EifQ.tJXaYuqEF7y2g6T3bS_V0vSa2fLPia35HucKxm8TXeA'\
+ -H 'content-length: 354'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Herself admit kid camera should skill increase.","maxScore":57,"minScore":22,"description":"West never movement white much hour thousand. Ever option agent reach increase. Must message act. Her tree yet.","estimatedTime":"93 weeks","previewFileId":"5bcb8042-1bbf-4d86-bf86-bb56fd948316","createdByUserId":"b6526136-001c-4534-83e3-c91454745c7a"}'

@@ -1,0 +1,25 @@
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_logger:event_hooks.py:25 Make GET request to http://localhost:8000/api/v1/exercises?courseId=1e8ee141-1301-4618-8c5f-ab858814b02c
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/exercises?courseId=1e8ee141-1301-4618-8c5f-ab858814b02c
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     FILES_ASSERTIONS:exercises.py:64 Check get exercises response
+INFO     BASE_ASSERTIONS:base.py:70 Check that length of exercises equals to 1
+INFO     FILES_ASSERTIONS:exercises.py:22 Check exercise
+INFO     BASE_ASSERTIONS:base.py:35 Check that title equals to She member every find late budget drive.
+INFO     BASE_ASSERTIONS:base.py:35 Check that course_id equals to 1e8ee141-1301-4618-8c5f-ab858814b02c
+INFO     BASE_ASSERTIONS:base.py:35 Check that min_score equals to 14
+INFO     BASE_ASSERTIONS:base.py:35 Check that max_score equals to 96
+INFO     BASE_ASSERTIONS:base.py:35 Check that order_index equals to 36
+INFO     BASE_ASSERTIONS:base.py:35 Check that description equals to Mean wind despite past class hand example moment.
+Specific save community training yes task series. Will still especially figure direction analysis task.
+INFO     BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 80 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validation JSON Schema

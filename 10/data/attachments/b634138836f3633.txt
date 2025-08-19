@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE5VDEzOjIxOjEyLjgzNDA2NSIsInVzZXJfaWQiOiI3MjgwYzYyZi03YWFmLTQyZTUtOTI2Yi0zZDU4YzAwZTdlYTcifQ.j52LEtywKJk7E6mERXi7KGm4EcF1lFlvwCTAF1YgKFg'\
+ -H 'content-length: 372'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Environmental continue above miss about hand.","maxScore":80,"minScore":1,"description":"Machine design enjoy either great week their. Capital maintain be recognize nice produce enough. Action individual industry through.","estimatedTime":"71 weeks","previewFileId":"7fbdf960-d628-4878-89d5-5c8cf9f4d6eb","createdByUserId":"7280c62f-7aaf-42e5-926b-3d58c00e7ea7"}'

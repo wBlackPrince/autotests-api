@@ -1,0 +1,11 @@
+curl -X 'PATCH'\
+ http://localhost:8000/api/v1/courses/426b5590-fb6c-4a61-a4ac-bbb3473e667b\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE5VDEzOjIxOjExLjkzMjA3NSIsInVzZXJfaWQiOiJiNjUyNjEzNi0wMDFjLTQ1MzQtODNlMy1jOTE0NTQ3NDVjN2EifQ.tJXaYuqEF7y2g6T3bS_V0vSa2fLPia35HucKxm8TXeA'\
+ -H 'content-length: 303'\
+ -H 'content-type: application/json'\
+ -d '{"title":"New provide official right doctor chair risk operation.","maxScore":80,"minScore":4,"description":"Form century spend security yet son. City case with partner debate style story. Rock mean bag end which born.\nHow this effect whom. Of turn environmental community.","estimatedTime":"79 weeks"}'

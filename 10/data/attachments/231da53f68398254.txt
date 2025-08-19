@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE5VDEzOjIxOjEzLjQyMzA2NSIsInVzZXJfaWQiOiI3YWU0YjEzNy04OTQ1LTRmNDMtYmU5OC03MTJiYmE1NDI2MDYifQ._kCj_p1fX26kndkNG06ZiPijCjXIUpzhgwxuai4Fp7M'\
+ -H 'content-length: 318'\
+ -H 'content-type: application/json'\
+ -d '{"title":"We read mind news west.","maxScore":72,"minScore":23,"description":"Close resource heavy city start form who. Company watch watch thought trial treatment office guess.","estimatedTime":"89 weeks","previewFileId":"6bec04d2-2422-4a5a-8276-d7d3404165b0","createdByUserId":"7ae4b137-8945-4f43-be98-712bba542606"}'

@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE5VDEzOjIxOjE1LjMyOTQxMiIsInVzZXJfaWQiOiJlMDVhZWM5Yy1jMmRmLTQxODEtYTQ3YS03M2IyYzE3NGQyOTcifQ.MODXu4yzwfgqoNMo4-qhbgGT2y4QqGpSreX2bte0nTU'\
+ -H 'content-length: 400'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Theory these example vote information audience explain.","maxScore":65,"minScore":15,"description":"Southern ever tell indeed level show chance. Respond long around avoid media. Total bed red wonder authority its security recently. Eye trade expert.","estimatedTime":"50 weeks","previewFileId":"bed7b79e-2b18-4e40-8ba4-2933927ff70f","createdByUserId":"e05aec9c-c2df-4181-a47a-73b2c174d297"}'

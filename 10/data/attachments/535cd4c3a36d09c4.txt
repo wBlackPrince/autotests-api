@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE5VDEzOjIxOjE0LjU5NjgyMCIsInVzZXJfaWQiOiI0MjQzM2VkNS0xNDBhLTQ5OWYtYjBlYi1hYmVkMWQ2MGEzN2QifQ.aSmMJoerPvCxmynYt5VZsPd7BoQNYX9O20cdFfKk8cA'\
+ -H 'content-length: 398'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Line pressure represent thing employee.","maxScore":54,"minScore":3,"description":"Bed dinner president soon lawyer.\nWin remain day down. Choose that international star catch although whether general.\nParticular bank vote. Thus station our more.","estimatedTime":"53 weeks","previewFileId":"15ef3305-ac22-4045-9c7c-341107212f7f","createdByUserId":"42433ed5-140a-499f-b0eb-abed1d60a37d"}'

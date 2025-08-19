@@ -1,0 +1,11 @@
+curl -X 'PATCH'\
+ http://localhost:8000/api/v1/exercises/9baeb364-3778-4b8d-b30b-899d0e141545\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE5VDEzOjIxOjE0LjU5NjgyMCIsInVzZXJfaWQiOiI0MjQzM2VkNS0xNDBhLTQ5OWYtYjBlYi1hYmVkMWQ2MGEzN2QifQ.aSmMJoerPvCxmynYt5VZsPd7BoQNYX9O20cdFfKk8cA'\
+ -H 'content-length: 300'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Difference quickly toward board board only standard.","maxScore":81,"minScore":16,"orderIndex":95,"description":"Bank behind since blood course. Others perform dream growth stand. Whom stuff memory stop.\nAdult could begin water north. Huge any activity second.","estimatedTime":"68 weeks"}'

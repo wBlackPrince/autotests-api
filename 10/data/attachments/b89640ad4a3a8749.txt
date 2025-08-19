@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE5VDEzOjIxOjE2LjYwNDI1MiIsInVzZXJfaWQiOiJhZTJmYjM1MC0zMjMyLTQyNTQtYTY1Zi1mNGMzNGRmY2NjZGEifQ.vFv46FChbD8wO3OQt6uOskoqVr3KizDhnQFZGXZSCiA'\
+ -H 'content-length: 434'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Today you government themselves again nation.","maxScore":89,"minScore":28,"description":"Source usually world beautiful against by product task. Natural happy between expect. Research choice sister fact.\nCivil gun drive cost inside truth. Statement team study issue. Ever source I.","estimatedTime":"69 weeks","previewFileId":"f4a2e57a-d511-42a6-ab28-a396a7dda8b3","createdByUserId":"ae2fb350-3232-4254-a65f-f4c34dfcccda"}'

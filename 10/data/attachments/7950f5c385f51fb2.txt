@@ -1,0 +1,21 @@
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/exercises
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     FILES_ASSERTIONS:exercises.py:84 Check create exercise response
+INFO     BASE_ASSERTIONS:base.py:35 Check that title equals to Score small whose experience late cup organization.
+INFO     BASE_ASSERTIONS:base.py:35 Check that course_id equals to 5ebd5397-b5c1-4259-bffc-35b84094352a
+INFO     BASE_ASSERTIONS:base.py:35 Check that min_score equals to 28
+INFO     BASE_ASSERTIONS:base.py:35 Check that max_score equals to 65
+INFO     BASE_ASSERTIONS:base.py:35 Check that order_index equals to 59
+INFO     BASE_ASSERTIONS:base.py:35 Check that description equals to Coach about media. Contain perform fish east investment. Voice Mr sister.
+Daughter along if recent art machine.
+INFO     BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 91 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validation JSON Schema
