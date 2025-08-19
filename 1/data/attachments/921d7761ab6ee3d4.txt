@@ -1,0 +1,11 @@
+curl -X 'PATCH'\
+ http://localhost:8000/api/v1/courses/d8717925-2559-4c4c-97a8-aa1221b62b24\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE5VDEwOjU5OjI2Ljk1NjUyOCIsInVzZXJfaWQiOiIzZjNiOTliNC1hZmQzLTRkYTMtYjhiZi1kZDQyYWM5OTU1Y2EifQ.tX0wbUpW1ZSksErcXaPBcZ9FkGVb7nSNPzi5ymU7b7w'\
+ -H 'content-length: 253'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Hand member help money detail.","maxScore":58,"minScore":30,"description":"Stop remain adult voice name issue meet film. Any but radio his beat court father. Themselves different toward candidate long majority see.","estimatedTime":"52 weeks"}'

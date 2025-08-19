@@ -1,0 +1,11 @@
+curl -X 'PATCH'\
+ http://localhost:8000/api/v1/exercises/505b0696-9955-40d1-a757-1855cd64f27f\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE5VDEwOjU5OjI5LjYyMjg5MyIsInVzZXJfaWQiOiJkMDAwY2ZiZS01OTBmLTQ3N2YtYTMxNy1kODMyODFmMjA5Y2MifQ.miSyNlCy0Focq0S575ctM4aaSLyun9m7ZYwQ-YC_Sug'\
+ -H 'content-length: 319'\
+ -H 'content-type: application/json'\
+ -d '{"title":"By TV draw clearly.","maxScore":89,"minScore":21,"orderIndex":30,"description":"Safe require itself into another. Seem wait wonder. Per within without notice appear.\nWeek focus feeling hit. Near agree help main everybody artist. Really available through husband share simple gun.","estimatedTime":"87 weeks"}'

@@ -1,0 +1,18 @@
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_logger:event_hooks.py:25 Make PATCH request to http://localhost:8000/api/v1/courses/d8717925-2559-4c4c-97a8-aa1221b62b24
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/courses/d8717925-2559-4c4c-97a8-aa1221b62b24
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:24 Check update course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that title equals to Hand member help money detail.
+INFO     BASE_ASSERTIONS:base.py:35 Check that min_score equals to 30
+INFO     BASE_ASSERTIONS:base.py:35 Check that max_score equals to 58
+INFO     BASE_ASSERTIONS:base.py:35 Check that description equals to Stop remain adult voice name issue meet film. Any but radio his beat court father. Themselves different toward candidate long majority see.
+INFO     BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 52 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validation JSON Schema

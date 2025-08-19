@@ -1,0 +1,24 @@
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_logger:event_hooks.py:25 Make GET request to http://localhost:8000/api/v1/exercises/0513e639-f159-4afe-a5b5-689b8fdd28cf
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/exercises/0513e639-f159-4afe-a5b5-689b8fdd28cf
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     FILES_ASSERTIONS:exercises.py:46 Check get exercise response
+INFO     FILES_ASSERTIONS:exercises.py:22 Check exercise
+INFO     BASE_ASSERTIONS:base.py:35 Check that title equals to Page recognize do couple.
+INFO     BASE_ASSERTIONS:base.py:35 Check that course_id equals to 41c3cd3a-bff4-41cd-bec1-22f1219571e8
+INFO     BASE_ASSERTIONS:base.py:35 Check that min_score equals to 25
+INFO     BASE_ASSERTIONS:base.py:35 Check that max_score equals to 84
+INFO     BASE_ASSERTIONS:base.py:35 Check that order_index equals to 49
+INFO     BASE_ASSERTIONS:base.py:35 Check that description equals to Detail rise Mrs actually for mean out interview. Well method economic.
+Effect add although country animal. Conference until woman since edge.
+INFO     BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 84 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validation JSON Schema

@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE5VDEwOjU5OjI5LjAzNTM4MyIsInVzZXJfaWQiOiI2NTA0MWViNC05ZTUyLTQwY2QtOTI3NC1iMWI4MGU4N2U3MWEifQ.pIoV3r1-6gI8kinYjhTFKB6FQWCYFUjrJMFhLPcm4W0'\
+ -H 'content-length: 345'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Professional resource hospital.","maxScore":75,"minScore":9,"description":"Really fill analysis maintain material music without. Lot center stay military condition study majority. Here sea pass.","estimatedTime":"51 weeks","previewFileId":"fdf138a8-5dc8-455a-b603-75f4ff251c20","createdByUserId":"65041eb4-9e52-40cd-9274-b1b80e87e71a"}'

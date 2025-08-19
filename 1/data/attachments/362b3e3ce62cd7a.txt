@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/exercises\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE5VDEwOjU5OjMwLjg5OTQ3MiIsInVzZXJfaWQiOiI4NmQ1MWVmYS0zNjcwLTQ5N2MtOGU3OC00NzRjYTg5N2ZmOTMifQ.SYN_Qv7ZMkbO8uCgpj2Oa69oCcD_uKxa3lGrGBICq_g'\
+ -H 'content-length: 333'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Remember again act top.","courseId":"b2681a35-3388-41f7-9384-ef70917b091a","maxScore":53,"minScore":13,"orderIndex":22,"description":"State foot side move. Player enough and foreign tell safe.\nNothing later these player two. Include tonight say line expect. Focus most gas remain include race.","estimatedTime":"99 weeks"}'

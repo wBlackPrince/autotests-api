@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE5VDEwOjU5OjI2Ljk1NjUyOCIsInVzZXJfaWQiOiIzZjNiOTliNC1hZmQzLTRkYTMtYjhiZi1kZDQyYWM5OTU1Y2EifQ.tX0wbUpW1ZSksErcXaPBcZ9FkGVb7nSNPzi5ymU7b7w'\
+ -H 'content-length: 435'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Entire since beat blue article usually.","maxScore":88,"minScore":7,"description":"Choice what environmental.\nInterview paper language money. Speech sign he hospital perform.\nHope toward grow ago civil senior for. Pressure analysis at bring. Billion Congress letter election my but.","estimatedTime":"85 weeks","previewFileId":"a10e63e1-401b-47b1-a532-2585a28d5982","createdByUserId":"3f3b99b4-afd3-4da3-b8bf-dd42ac9955ca"}'

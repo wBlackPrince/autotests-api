@@ -1,0 +1,18 @@
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:85 Check create course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that title equals to Movie network price.
+INFO     BASE_ASSERTIONS:base.py:35 Check that max_score equals to 81
+INFO     BASE_ASSERTIONS:base.py:35 Check that min_score equals to 30
+INFO     BASE_ASSERTIONS:base.py:35 Check that description equals to Message early minute program fire body miss. Find say blood million mother suggest blue practice.
+INFO     BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 68 weeks
+INFO     BASE_ASSERTIONS:base.py:35 Check that preview_file_id equals to 0aec5b45-54e0-4633-91ae-ae029d9448e8
+INFO     BASE_ASSERTIONS:base.py:35 Check that created_by_user_id equals to 2177fa4b-2a6c-4225-829e-1318957f51a0
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validation JSON Schema

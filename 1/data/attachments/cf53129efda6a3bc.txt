@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE5VDEwOjU5OjMwLjg5OTQ3MiIsInVzZXJfaWQiOiI4NmQ1MWVmYS0zNjcwLTQ5N2MtOGU3OC00NzRjYTg5N2ZmOTMifQ.SYN_Qv7ZMkbO8uCgpj2Oa69oCcD_uKxa3lGrGBICq_g'\
+ -H 'content-length: 437'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Determine analysis chair several hope form.","maxScore":77,"minScore":27,"description":"Cost hard lot adult. First way provide successful sit field hair. Different value space lose project allow.\nRealize whose do treatment yeah middle because. Rather cultural new point. Any name bank.","estimatedTime":"69 weeks","previewFileId":"ac3e74bb-c4e0-46fc-a164-4055918f8a61","createdByUserId":"86d51efa-3670-497c-8e78-474ca897ff93"}'

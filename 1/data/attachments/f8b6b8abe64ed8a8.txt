@@ -1,0 +1,22 @@
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_logger:event_hooks.py:25 Make PATCH request to http://localhost:8000/api/v1/exercises/505b0696-9955-40d1-a757-1855cd64f27f
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/exercises/505b0696-9955-40d1-a757-1855cd64f27f
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     FILES_ASSERTIONS:exercises.py:107 Check update exercise response
+INFO     BASE_ASSERTIONS:base.py:35 Check that title equals to By TV draw clearly.
+INFO     BASE_ASSERTIONS:base.py:35 Check that min_score equals to 21
+INFO     BASE_ASSERTIONS:base.py:35 Check that max_score equals to 89
+INFO     BASE_ASSERTIONS:base.py:35 Check that order_index equals to 30
+INFO     BASE_ASSERTIONS:base.py:35 Check that description equals to Safe require itself into another. Seem wait wonder. Per within without notice appear.
+Week focus feeling hit. Near agree help main everybody artist. Really available through husband share simple gun.
+INFO     BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 87 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validation JSON Schema

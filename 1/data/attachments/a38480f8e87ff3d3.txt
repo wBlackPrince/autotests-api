@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE5VDEwOjU5OjMwLjI4MzkxOCIsInVzZXJfaWQiOiJiOGMwOWE2MS02ODQ0LTQzOWItOGU2My0wM2E2YzE2MjM0ODIifQ.wP4ZTY4x_Zca1fb0_bHRST0LnWLe1KF5P_VLMwCuEVI'\
+ -H 'content-length: 403'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Purpose receive save.","maxScore":78,"minScore":18,"description":"Letter voice bed. Change recent right stock.\nTeam call poor past.\nMeet scene kitchen measure physical. Board grow support many anyone. Knowledge beyond under lay garden PM step number.","estimatedTime":"95 weeks","previewFileId":"da5ffa88-fd5e-4c4c-8c55-6f0bf06ff36e","createdByUserId":"b8c09a61-6844-439b-8e63-03a6c1623482"}'

@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE5VDEwOjU5OjMxLjU2MzMwNiIsInVzZXJfaWQiOiJjOTVhNDc5Yi0xNDAzLTQ3ZDUtOTYwNS1kZDU0NDllODk1YTAifQ.q5aSnC1a9E9FvWDwbJcU0Os8_EVuiMXe9akdNxy_XO8'\
+ -H 'content-length: 364'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Trouble left term force your wrong teach.","maxScore":93,"minScore":3,"description":"Among write father same may. Plant both wrong join direction staff behavior. Prepare thank born economic onto approach when few.","estimatedTime":"82 weeks","previewFileId":"23f1c379-2192-4163-923e-7df1ab683757","createdByUserId":"c95a479b-1403-47d5-9605-dd5449e895a0"}'

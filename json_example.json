@@ -1,7 +1,0 @@
-{
-  "name": "Eduard",
-  "age": 20,
-  "is_student": true,
-  "courses": ["Python", "API Testing", "UI Testing"],
-  "address": {"city":  "Cheboksary", "stree":  "Sovchoznya"}
-}

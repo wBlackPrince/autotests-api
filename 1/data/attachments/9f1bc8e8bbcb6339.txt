@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE5VDEwOjU5OjI4LjQ1NDg5MiIsInVzZXJfaWQiOiIyMTc3ZmE0Yi0yYTZjLTQyMjUtODI5ZS0xMzE4OTU3ZjUxYTAifQ.n9mtS9ZwmX5-kfvRCkIq6emeyPUbFtq_4_7l_J4UCmA'\
+ -H 'content-length: 313'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Movie network price.","maxScore":81,"minScore":30,"description":"Message early minute program fire body miss. Find say blood million mother suggest blue practice.","estimatedTime":"68 weeks","previewFileId":"0aec5b45-54e0-4633-91ae-ae029d9448e8","createdByUserId":"2177fa4b-2a6c-4225-829e-1318957f51a0"}'

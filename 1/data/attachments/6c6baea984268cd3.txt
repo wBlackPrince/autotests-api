@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/exercises\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE5VDEwOjU5OjI5LjYyMjg5MyIsInVzZXJfaWQiOiJkMDAwY2ZiZS01OTBmLTQ3N2YtYTMxNy1kODMyODFmMjA5Y2MifQ.miSyNlCy0Focq0S575ctM4aaSLyun9m7ZYwQ-YC_Sug'\
+ -H 'content-length: 361'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Actually cell decade government hard attack people.","courseId":"98e957ef-91ef-450e-9699-53f93c7c43e9","maxScore":52,"minScore":24,"orderIndex":65,"description":"Country sign strategy sell doctor.\nStill need sense money. Increase money term purpose program.\nTable leader song direction impact often. Manage rich process.","estimatedTime":"85 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/exercises\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE5VDEwOjU5OjMxLjU2MzMwNiIsInVzZXJfaWQiOiJjOTVhNDc5Yi0xNDAzLTQ3ZDUtOTYwNS1kZDU0NDllODk1YTAifQ.q5aSnC1a9E9FvWDwbJcU0Os8_EVuiMXe9akdNxy_XO8'\
+ -H 'content-length: 366'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Admit then reduce.","courseId":"1f65aefa-c320-480c-abc1-b46376f440ff","maxScore":75,"minScore":3,"orderIndex":78,"description":"Four whom red. Officer pretty read level challenge.\nLeft hand reality. Officer now relate protect.\nUnderstand along above politics. Forget much travel me little behavior. Subject stuff vote leader.","estimatedTime":"62 weeks"}'
