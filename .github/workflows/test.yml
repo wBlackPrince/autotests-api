@@ -68,10 +68,11 @@ jobs:
 
     steps:
       # 8. Загружает allure-results артефакт, загруженный в предыдущем задании.
-      - name: Download =allure results from run-tests job
+      - name: Download allure results from run-tests job
         uses: actions/download-artifact@v5
         with:
           name: allure-results
+          path: allure-results
 
       # 9. Шаг для получения истории отчётов Allure, если она существует
       - name: Get Allure history
