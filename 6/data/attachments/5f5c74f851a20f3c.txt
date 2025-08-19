@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/exercises\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE5VDEyOjUxOjE3LjU1OTk0MyIsInVzZXJfaWQiOiJkMDIxYWU5Ny0zZTg4LTQ0Y2MtOWQ2My03OTYxYTRkYmQyZmUifQ.mtrtRYiK4jzmPPDTYbNF94qlqrZHz8-td5SgYDgEYDc'\
+ -H 'content-length: 363'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Accept nothing attorney page coach.","courseId":"4a17df92-429e-4d13-96e8-522748abb98e","maxScore":52,"minScore":26,"orderIndex":81,"description":"Be computer per that market thought. Walk get life remain shake.\nKnowledge officer win later degree economy significant. Power newspaper subject attorney unit few shake federal.","estimatedTime":"90 weeks"}'

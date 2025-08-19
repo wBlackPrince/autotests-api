@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE5VDEyOjUxOjE5LjgyMTA2MSIsInVzZXJfaWQiOiI1MWY5ZjFlMi1iMmJiLTQwZjAtYmI3MS1hZDFhYTMwODRkZDgifQ.i49LDSYmG27WJiTXELldPXmrdqPbxLanV5Wh3FLG08k'\
+ -H 'content-length: 419'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Analysis fire while weight film several.","maxScore":58,"minScore":20,"description":"Current process lay education head letter first. Thousand sure you sea major nation. Idea ask information anything watch.\nImportant all may success real few material. Life rich call.","estimatedTime":"97 weeks","previewFileId":"ae78c2a9-38e8-414a-a1f9-2d56dd8ccb76","createdByUserId":"51f9f1e2-b2bb-40f0-bb71-ad1aa3084dd8"}'

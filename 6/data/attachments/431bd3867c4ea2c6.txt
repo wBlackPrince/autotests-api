@@ -1,0 +1,19 @@
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_logger:event_hooks.py:25 Make PATCH request to http://localhost:8000/api/v1/courses/dd0be710-c802-4bb6-ba01-1bae79fa455b
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/courses/dd0be710-c802-4bb6-ba01-1bae79fa455b
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:24 Check update course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that title equals to Describe truth prepare.
+INFO     BASE_ASSERTIONS:base.py:35 Check that min_score equals to 22
+INFO     BASE_ASSERTIONS:base.py:35 Check that max_score equals to 61
+INFO     BASE_ASSERTIONS:base.py:35 Check that description equals to Main cell south respond. Employee consumer start land.
+Need activity small result television race. Offer into responsibility place space really rich.
+INFO     BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 66 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validation JSON Schema

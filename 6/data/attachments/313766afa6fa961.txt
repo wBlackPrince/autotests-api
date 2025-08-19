@@ -1,0 +1,21 @@
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_logger:event_hooks.py:25 Make PATCH request to http://localhost:8000/api/v1/exercises/cce0f177-df86-4a47-8483-51b73b426450
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/exercises/cce0f177-df86-4a47-8483-51b73b426450
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     FILES_ASSERTIONS:exercises.py:107 Check update exercise response
+INFO     BASE_ASSERTIONS:base.py:35 Check that title equals to Education entire week increase everybody defense himself oil.
+INFO     BASE_ASSERTIONS:base.py:35 Check that min_score equals to 21
+INFO     BASE_ASSERTIONS:base.py:35 Check that max_score equals to 76
+INFO     BASE_ASSERTIONS:base.py:35 Check that order_index equals to 86
+INFO     BASE_ASSERTIONS:base.py:35 Check that description equals to That can learn great compare live organization suffer. Those learn now teach rest. Quality interesting bad star tonight.
+INFO     BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 58 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validation JSON Schema

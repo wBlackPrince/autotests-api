@@ -1,0 +1,23 @@
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_logger:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_logger:event_hooks.py:25 Make GET request to http://localhost:8000/api/v1/exercises/32b99c66-59c4-4bdf-bb4e-f54ade94291d
+INFO     HTTP_logger:event_hooks.py:34 Got 200 OK from http://localhost:8000/api/v1/exercises/32b99c66-59c4-4bdf-bb4e-f54ade94291d
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     FILES_ASSERTIONS:exercises.py:46 Check get exercise response
+INFO     FILES_ASSERTIONS:exercises.py:22 Check exercise
+INFO     BASE_ASSERTIONS:base.py:35 Check that title equals to Itself radio key bit no reduce much.
+INFO     BASE_ASSERTIONS:base.py:35 Check that course_id equals to 35a79f74-466a-4dee-9a10-f7e608fecae1
+INFO     BASE_ASSERTIONS:base.py:35 Check that min_score equals to 16
+INFO     BASE_ASSERTIONS:base.py:35 Check that max_score equals to 55
+INFO     BASE_ASSERTIONS:base.py:35 Check that order_index equals to 42
+INFO     BASE_ASSERTIONS:base.py:35 Check that description equals to Class ok discussion glass sort red. Bring something support front prepare later bad after. Thus school smile wear move house assume.
+INFO     BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 53 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validation JSON Schema

@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE5VDEyOjUxOjE4Ljc4NzY2MCIsInVzZXJfaWQiOiJmZjgyYmNhYy05NWI0LTRiNTYtYTNhYS04ZDVhZTc5OTJmNzUifQ.pG4ZuO85baIJ7Z8_vc-311jfQARD57ThdAvP-Xs5iuo'\
+ -H 'content-length: 407'\
+ -H 'content-type: application/json'\
+ -d '{"title":"By doctor model.","maxScore":69,"minScore":21,"description":"Art beat deal lose mean feeling operation police. Personal talk early west employee affect.\nFill present smile design choice great approach. Create billion available keep letter American market.","estimatedTime":"96 weeks","previewFileId":"7adc7f7a-a220-4869-bb62-b451c6e9036c","createdByUserId":"ff82bcac-95b4-4b56-a3aa-8d5ae7992f75"}'

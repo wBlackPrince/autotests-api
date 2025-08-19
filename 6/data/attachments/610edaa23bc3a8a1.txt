@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/exercises\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE5VDEyOjUxOjE3LjI4NTc4NSIsInVzZXJfaWQiOiI3YTY1ZDg5Yy0wNTU0LTQwZTQtODYzNS0zNDY2OWE0MTNmMjYifQ.k9811N58I7ugyewTWczlZi6HO1x6RyCneSjx6LKuiSg'\
+ -H 'content-length: 320'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Early point consider.","courseId":"7cf7e069-af93-4fbf-be56-99e0fb8762d7","maxScore":66,"minScore":29,"orderIndex":49,"description":"Rise pay young leader man expect country. World activity protect voice almost everything. Spring several theory probably maybe charge director allow.","estimatedTime":"75 weeks"}'

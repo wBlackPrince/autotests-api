@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/exercises\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE5VDEyOjUxOjE5LjgyMTA2MSIsInVzZXJfaWQiOiI1MWY5ZjFlMi1iMmJiLTQwZjAtYmI3MS1hZDFhYTMwODRkZDgifQ.i49LDSYmG27WJiTXELldPXmrdqPbxLanV5Wh3FLG08k'\
+ -H 'content-length: 327'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Although become across sort avoid employee magazine stage.","courseId":"35e186fb-0d2d-4078-9ebe-951147c2534b","maxScore":69,"minScore":19,"orderIndex":13,"description":"Talk rest speak sound live growth crime. Usually type full. Approach could owner understand summer trip find statement.","estimatedTime":"53 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE5VDEyOjUxOjE3LjI4NTc4NSIsInVzZXJfaWQiOiI3YTY1ZDg5Yy0wNTU0LTQwZTQtODYzNS0zNDY2OWE0MTNmMjYifQ.k9811N58I7ugyewTWczlZi6HO1x6RyCneSjx6LKuiSg'\
+ -H 'content-length: 404'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Cut commercial indicate.","maxScore":90,"minScore":16,"description":"Boy use family apply. Product keep per reflect option.\nMinute crime book manage. Clear choose could. Keep because future share determine. Sister enter team data quality party realize.","estimatedTime":"79 weeks","previewFileId":"574e10bd-0c27-445e-b0f3-f9eb8ca56b1f","createdByUserId":"7a65d89c-0554-40e4-8635-34669a413f26"}'

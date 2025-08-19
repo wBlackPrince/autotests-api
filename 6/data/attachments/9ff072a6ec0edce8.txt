@@ -1,0 +1,11 @@
+curl -X 'POST'\
+ http://localhost:8000/api/v1/courses\
+ -H 'host: localhost:8000'\
+ -H 'accept: */*'\
+ -H 'accept-encoding: gzip, deflate'\
+ -H 'connection: keep-alive'\
+ -H 'user-agent: python-httpx/0.28.1'\
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTE5VDEyOjUxOjE1Ljc4MTM0OSIsInVzZXJfaWQiOiJmMDZmNWZiNy1lMzlhLTQzYjAtYjlhNy1lMjliZTkyOTBiNDAifQ.I66Ogh8BH6_xQzrDBWhrDoOJkL3B26i-qul51taKmNs'\
+ -H 'content-length: 393'\
+ -H 'content-type: application/json'\
+ -d '{"title":"Parent five land raise your road soldier trial.","maxScore":63,"minScore":11,"description":"Director question fill. Kid coach population manage develop.\nEither reveal morning certain source. Commercial pressure television scientist say yard.","estimatedTime":"50 weeks","previewFileId":"06ef4e60-ac9f-4032-ae14-067a5dc59225","createdByUserId":"f06f5fb7-e39a-43b0-b9a7-e29be9290b40"}'
