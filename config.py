@@ -14,6 +14,7 @@ class TestDataConfig(BaseModel):
     image_png_file: FilePath
 
 
+
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(
         extra="allow",
